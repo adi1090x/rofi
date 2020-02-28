@@ -18,6 +18,20 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 |-|-|
 |![gif](images/menus/0.gif)|![gif](images/applets/0.gif)|
 
+<details>
+<summary>Quick Links</summary>
+
+- [Installation](https://github.com/adi1090x/rofi#installation)
+- [Applets](https://github.com/adi1090x/rofi#applets)
+- [Menus](https://github.com/adi1090x/rofi#menus)
+- [Colorschemes](https://github.com/adi1090x/rofi#colorschemes)
+- [Usage](https://github.com/adi1090x/rofi#tips)
+  * [Polybar](https://github.com/adi1090x/rofi#use-with-polybar)
+  * [I3wm](https://github.com/adi1090x/rofi#use-with-i3)
+  * [Openbox](https://github.com/adi1090x/rofi#use-with-openbox)
+
+</details>
+
 ### Dependencies
 
 | Applets/Menus       | Package(s)                                                   | Note   |
