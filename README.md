@@ -96,7 +96,7 @@ cd scripts
 
 ### Applets
 
-<!--![gif](images/applets/0.gif) <br />-->
+![gif](images/applets.gif) <br />
 
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
@@ -123,7 +123,7 @@ cd scripts
 
 ### Menus
 
-<!--![gif](images/menus/0.gif) <br />-->
+![gif](images/menus.gif) <br />
 
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
