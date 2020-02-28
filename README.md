@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/github/issues/adi1090x/rofi?style=flat-square">
 </p>
 
+<p align="left">
+<a href="https://www.buymeacoffee.com/adi1090x" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+</p>
+
 A collection of custom *applets* and *menus* made using [rofi](https://github.com/davatorium/rofi) and its dmenu emulation, inspired by [rofi-menus](https://gitlab.com/vahnrr/rofi-menus).
 
 |Menus|Applets|
@@ -236,6 +240,11 @@ Same thing can be done with openbox by adding these lines to rc.xml file:
     </keybind>
     <!-- etc -->
 ```
+
+### Support Me
+<p align="left">
+<a href="https://www.paypal.me/adi1090x" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/paypal-adi1090x-blue?style=for-the-badge&logo=paypal"></a> <a href="https://www.buymeacoffee.com/adi1090x" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/BuyMeAcoffee-adi1090x-orange?style=for-the-badge&logo=buy-me-a-coffee"></a>  
+</p>
 
 ### Bottom Line
 + PR's, Issues, Contributions are welcome.
