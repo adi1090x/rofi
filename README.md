@@ -1,9 +1,3 @@
----
-title: Rofi Applets & Menus
-created: '2020-02-27T07:19:28.048Z'
-modified: '2020-02-28T10:55:03.989Z'
----
-
 # Rofi Applets & Menus
 
 <p align="left">
