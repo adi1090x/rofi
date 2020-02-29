@@ -56,6 +56,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 
 ### Installation
 
+
 + First of all make sure you have `rofi` installed:
 ``` bash
 # Arch / Arch-based
@@ -92,6 +93,11 @@ cd scripts
 
 # (or from anywhere)
 . ~/.config/rofi/scripts/backlight.sh
+```
+##### Arch:
+For the Network Menu, you will need a command named ``` dig ``` to install this package you need to run
+```
+pacman -S dnsutils
 ```
 
 ### Applets
