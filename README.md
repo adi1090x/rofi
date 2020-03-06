@@ -40,7 +40,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 | Backlight  | `xbacklight`, `dunst`  | Adjust brightness & Notify. |
 | Battery  | `acpi` & `xfce4-power-manager-settings` | To get battery info & launch power manager.|
 | MPD        | `mpd` and `mpc`  | `mpc` is a cli based client for `mpd`.|
-| Network    | `nmcli`, `nmtui`, `bmon`, `nm-connection-editor` & `termite` | `Termite` is required to open `nmtui` & `bmon`, or any other terminal you use, just change this in *~/.config/rofi/scripts/network.sh* & also in *menu*. |
+| Network    | `dnsutils`, `nmcli`, `nmtui`, `bmon`, `nm-connection-editor` & `termite` | `Termite` is required to open `nmtui` & `bmon`, or any other terminal you use, just change this in *~/.config/rofi/scripts/network.sh* & also in *menu*. |
 | Powermenu      | `systemctl`, `i3lock` | By default `systemctl` is used for most actions, `i3lock` is used for locking, `openbox --exit` is used to log out. you might want to change these commands to match your setup. |
 | Quicklinks | `firefox` (or `chromium`) | By default `firefox` is used to open links, you can use any other browser if you want, change accordingly. |
 | Screenshot | `scrot` `maim` & `viewnior` | `scrot` to take shot & `viewnior` to open it after taking screenshot, you can change to whatever you use. |
