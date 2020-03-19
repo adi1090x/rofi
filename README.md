@@ -148,6 +148,10 @@ cd scripts
 |--|--|
 |![img](images/menus/9.png)|![img](images/menus/10.png)|
 
+### Android Style Sidemenus
+
+![gif](images/android.gif) <br />
+
 ### Colorschemes
 
 The files are stored in *~/.config/rofi/themes/colorschemes*.
