@@ -51,6 +51,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 
 + **Comfortaa** Used for normal text, ([preview](https://www.dafont.com/comfortaa.font) and [source](https://www.deviantart.com/aajohan/art/Comfortaa-font-105395949)).
 + **Hurmit Nerd Font Mono** Used for icons, ([preview](https://app.programmingfonts.org/#hermit) and [source](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hermit)).
++ **Feather** For icons used in android style sidemenus, [Here](https://github.com/adi1090x/rofi/blob/master/fonts/feather.ttf)
 
 **Warning:** Do not change the `@icon-font` variable to another font, or you will end up messing with all applets/menus layout.
 
@@ -103,7 +104,7 @@ cd scripts
 - **Battery:** Display battery percentage & charging-discharging status with dynamic icons.
 - **MPD:** Control the song play through [mpd](https://github.com/MusicPlayerDaemon/).
 - **Network:** Display Online-Offline status with dynamic icons. 
-- **Powermenu:** A classic power penu, with Uptime.
+- **Powermenu:** A classic power menu, with Uptime.
 - **Quicklinks:** Bookmarks shortcuts for most used sites.
 - **Screenshot:** Take screenshots using [scrot](https://github.com/dreamer/scrot).
 - **Time:** Display Time, Day & Date.
@@ -130,7 +131,7 @@ cd scripts
 - **Battery:** Display battery percentage & charging-discharging status with dynamic icons.
 - **MPD:** Control the song play through [mpd](https://github.com/MusicPlayerDaemon/).
 - **Network:** Display SSID, IP, Online-Offline status with dynamic icons. 
-- **Powermenu:** A classic power penu, shows Uptime, CPU & Memory usages.
+- **Powermenu:** A classic power menu, shows Uptime, CPU & Memory usages.
 - **Quicklinks:** Bookmarks shortcuts for most used sites.
 - **Screenshot:** Take screenshots using [scrot](https://github.com/dreamer/scrot).
 - **Time:** Display Time, Day, Month, Date.
@@ -149,6 +150,14 @@ cd scripts
 |![img](images/menus/9.png)|![img](images/menus/10.png)|
 
 ### Android Style Sidemenus
+
+- **Apps:** Shortcuts for most used applications.
+- **Backlight:** Adjust screen brightness.
+- **MPD:** Control the song play through [mpd](https://github.com/MusicPlayerDaemon/).
+- **Powermenu:** Android like Powermenu.
+- **Quicklinks:** Bookmarks shortcuts for most used sites.
+- **Screenshot:** Take screenshots using [scrot](https://github.com/dreamer/scrot).
+- **Volume:** Control volume with dynamic icons for mute status.
 
 ![gif](images/android.gif) <br />
 
