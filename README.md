@@ -166,10 +166,13 @@ cd scripts
 ### App Launchers
 
 A collection for every app laucher i've used.
+Edit the `launcher.sh` file and change the **style** variable to set the style you like.
 
 ***Stuff you need***
 + *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + *Fonts* : [Fantasque & Iosevka](https://github.com/adi1090x/rofi/blob/master/fonts)
+
+> Click on thumbnails to enlarge the image/gif.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
 |--|--|--|--|--|--|
@@ -178,7 +181,6 @@ A collection for every app laucher i've used.
 |Grid|Grid Round|Grid Full|Purple|Rainbow Sidebar|Rainbow|
 |--|--|--|--|--|--|
 |![gif](images/launchers/7.gif)|![gif](images/launchers/8.gif)|![gif](images/launchers/10.gif)|![gif](images/launchers/9.gif)|![gif](images/launchers/11.gif)|![gif](images/launchers/12.gif)|
-
 
 ### Colorschemes
 
