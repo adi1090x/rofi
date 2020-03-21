@@ -177,6 +177,7 @@ Edit the `launcher.sh` file and change the **style** variable to set the style y
 ***Stuff you need***
 + *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + *Fonts* : [Fantasque & Iosevka](https://github.com/adi1090x/rofi/blob/master/fonts)
++ *Compton_tryone* : For Blur
 
 > Click on thumbnails to enlarge the image/gif.
 
