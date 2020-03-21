@@ -52,6 +52,8 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 + **Comfortaa** Used for normal text, ([preview](https://www.dafont.com/comfortaa.font) and [source](https://www.deviantart.com/aajohan/art/Comfortaa-font-105395949)).
 + **Hurmit Nerd Font Mono** Used for icons, ([preview](https://app.programmingfonts.org/#hermit) and [source](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hermit)).
 + **Feather** For icons used in android style sidemenus, [Here](https://github.com/adi1090x/rofi/blob/master/fonts/feather.ttf)
++ **Fantasque** For App launchers, [Here](https://github.com/adi1090x/rofi/blob/master/fonts)
++ **Iosevka** For App launchers, [Here](https://github.com/adi1090x/rofi/blob/master/fonts)
 
 **Warning:** Do not change the `@icon-font` variable to another font, or you will end up messing with all applets/menus layout.
 
@@ -160,6 +162,23 @@ cd scripts
 - **Volume:** Control volume with dynamic icons for mute status.
 
 ![gif](images/android.gif) <br />
+
+### App Launchers
+
+A collection for every app laucher i've used.
+
+***Stuff you need***
++ *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
++ *Fonts* : [Fantasque & Iosevka](https://github.com/adi1090x/rofi/blob/master/fonts)
+
+|Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
+|--|--|--|--|--|--|
+|![gif](images/launchers/1.gif)|![gif](images/launchers/2.gif)|![gif](images/launchers/3.gif)|![gif](images/launchers/4.gif)|![gif](images/launchers/5.gif)|![gif](images/launchers/6.gif)|
+
+|Grid|Grid Round|Grid Full|Purple|Rainbow Sidebar|Rainbow|
+|--|--|--|--|--|--|
+|![gif](images/launchers/7.gif)|![gif](images/launchers/8.gif)|![gif](images/launchers/10.gif)|![gif](images/launchers/9.gif)|![gif](images/launchers/11.gif)|![gif](images/launchers/12.gif)|
+
 
 ### Colorschemes
 

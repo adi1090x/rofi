@@ -1,0 +1,107 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    drun-display-format: "{icon}";
+	show-icons: true;
+	icon-theme: "Papirus";
+	location: 0;
+	yoffset: 0;
+    xoffset: 0;	
+	fake-transparency: false;
+	hide-scrollbar: true;
+	bw: 0;
+    fullscreen: false;
+    show-icons: true;
+	terminal: "termite";
+	sidebar-mode: false;
+}
+
+/* colors */
+* {
+red: #EC5250;
+blue: #25B1CA;
+green: #2ABB9C;
+purple: #5537D2;
+}
+
+// black
+* {
+bg: #000000cc;
+bg-sel: #00000066;
+fg: #ffffff;
+}
+
+// white
+/*
+* {
+bg: #ffffffa6;
+bg-sel: #ffffff8c;
+fg: #ffffff;
+}
+*/
+
+* {
+  background-color: #00000000;
+  font: "FantasqueSansMono Nerd Font 48";
+}
+
+window {
+  height: 60%;
+  width: 50%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 0% 0% 0% 0%;
+  background-color: @bg;
+  border: 0;
+  border-radius: 8;
+  border-color: @bg;
+}
+
+listview {
+  columns: 6;
+  padding: 8;
+  spacing: 10;
+}
+
+element {
+  border: 0;
+  text-color: @fg;
+  orientation: vertical;
+  padding: 12 12 12 20;
+  border-radius: 8;
+}
+
+element selected {
+  background-color: @bg-sel;
+  border-color: @bg;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+  padding: 4 4 4 4;
+  /* change this colors to change inputbar color*/
+  background-color: @red;
+  border: 0 0 0 0;
+  border-color: @fg;
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  font: "FantasqueSansMono Nerd Font 12";
+  text-color: @fg;
+  padding: 8 12 8 12;
+}

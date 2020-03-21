@@ -1,0 +1,94 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    drun-display-format: "{icon} {name}";
+    display-drun: "Applications";
+	show-icons: true;
+	icon-theme: "Papirus";
+	location: 0;
+	columns: 3;
+	fake-transparency: false;
+	hide-scrollbar: true;
+	bw: 0;
+    fullscreen: true;
+    show-icons: true;
+	terminal: "termite";
+	sidebar-mode: false;
+}
+
+@import "colors.rasi"
+
+* {
+  text-font:                            "Iosevka 14";
+
+  inputbar-margin:                      3px 3px;
+  prompt-padding:                       15px 20px;
+  entry-padding:                        15px 15px 15px 0px;
+  list-element-padding:                 10px;
+  list-element-margin:                  @inputbar-margin;
+  list-element-border:                  0px 0px 0px 5px;
+
+  apps-textbox-prompt-colon-padding:    15px -5px 0px 0px;
+}
+
+#window {
+  width: 100%;
+  height: 100%;
+  padding: 120px 100px;
+}
+
+* {
+  background-color: @background;
+  text-color: @foreground;
+  font: @text-font;
+}
+
+inputbar,
+prompt,
+textbox-prompt-colon,
+entry {
+  background-color: @background-light;
+}
+
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+  margin: @inputbar-margin;
+}
+
+#prompt {
+  padding: @prompt-padding;
+  background-color: @accent;
+  text-color: @background;
+}
+
+#textbox-prompt-colon {
+  expand: false;
+  str: "  ::  ";
+  padding: @apps-textbox-prompt-colon-padding;
+}
+
+#entry {
+  text-color: @accent;
+  padding: @entry-padding;
+}
+
+#element {
+  padding: @list-element-padding;
+  margin: @list-element-margin;
+  border: @list-element-border;
+  background-color: @background-light;
+  border-color: @background-light;
+}
+
+#element.selected {
+  background-color: @background-focus;
+  text-color: @accent;
+  border-color: @accent;
+}

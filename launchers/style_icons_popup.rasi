@@ -1,0 +1,119 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    drun-display-format: "{icon}";
+    display-drun: "Apps";
+	show-icons: true;
+	icon-theme: "Papirus";
+	location: 0;
+	yoffset: 0;
+    xoffset: 0;	
+	fake-transparency: false;
+	hide-scrollbar: true;
+	bw: 0;
+    fullscreen: false;
+    show-icons: true;
+	terminal: "termite";
+	sidebar-mode: false;
+}
+
+// light
+* {
+ac: #5294E2;
+bg: #ffffff;
+bg-alt: #EAEAEA;
+fg: #ffffff;
+}
+
+
+// dark
+/*
+* {
+ac: #00BCD4;
+bg: #263238;
+bg-alt: #293840;
+fg: #263238;
+}
+*/
+
+// blur
+/*
+* {
+ac: #0000008c;
+bg: #00000080;
+bg-alt: #00000040;
+fg: #e5e5e5;
+}
+*/
+
+* {
+  background-color: #00000000;
+  font: "FantasqueSansMono Nerd Font 36";
+}
+
+window {
+  height: 52%;
+  width: 20%;
+  anchor: east;
+  location: east;
+  x-offset: -1%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 0% 0% 0% 0%;
+  background-color: @bg;
+  border: 0;
+  border-radius: 12;
+  border-color: @bg;
+}
+
+listview {
+  columns: 3;
+  padding: 8;
+  spacing: 10;
+}
+
+element {
+  border: 0;
+  text-color: @fg;
+  background-color: @bg-alt;
+  orientation: vertical;
+  padding: 12 12 12 16;
+  border-radius: 8;
+}
+
+element selected {
+  background-color: @ac;
+  border-color: @bg;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+  padding: 4 4 4 4;
+  margin: 1% 0.5%;
+  /* change this colors to change style*/
+  background-color: @ac;
+  border: 0 0 0 0;
+  border-radius: 8;
+  border-color: @fg;
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  font: "FantasqueSansMono Nerd Font 12";
+  text-color: @fg;
+  padding: 8 12 8 12;
+}
