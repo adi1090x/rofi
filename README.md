@@ -18,12 +18,18 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 |-|-|
 |![gif](images/menus/0.gif)|![gif](images/applets/0.gif)|
 
+|Launchers|Sidemenus|
+|-|-|
+|![gif](images/launchers/2.gif)|![gif](images/android.gif)|
+
 <details>
 <summary>Quick Links</summary>
 
 - [Installation](https://github.com/adi1090x/rofi#installation)
 - [Applets](https://github.com/adi1090x/rofi#applets)
 - [Menus](https://github.com/adi1090x/rofi#menus)
+- [Launchers](https://github.com/adi1090x/rofi#app-launchers)
+- [Sidemenus](https://github.com/adi1090x/rofi#android-style-sidemenus)
 - [Colorschemes](https://github.com/adi1090x/rofi#colorschemes)
 - [Usage](https://github.com/adi1090x/rofi#tips)
   * [Polybar](https://github.com/adi1090x/rofi#use-with-polybar)
