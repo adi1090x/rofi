@@ -20,7 +20,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 
 |Launchers|Sidemenus|
 |-|-|
-|![gif](images/launchers/2.gif)|![gif](images/android.gif)|
+|![gif](images/launchers/launchers.gif)|![gif](images/android.gif)|
 
 <details>
 <summary>Quick Links</summary>
@@ -177,7 +177,7 @@ Edit the `launcher.sh` file and change the **style** variable to set the style y
 ***Stuff you need***
 + *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + *Fonts* : [Fantasque & Iosevka](https://github.com/adi1090x/rofi/blob/master/fonts)
-+ *Compton_tryone* : For Blur
++ *Compton_tryone* : For Blur, [Here](https://github.com/tryone144/compton)
 
 > Click on thumbnails to enlarge the image/gif.
 
