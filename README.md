@@ -181,7 +181,8 @@ A collection for every app laucher i've used.
 ***Styling***
 + Edit the `launcher.sh` file and change the **style** variable to set the style you like.
 + Edit the selected `.rasi` file and *uncomment* the desired color/style. 
-+ Click on thumbnails to enlarge the image/gif.
+
+> Click on thumbnails to enlarge the image/gif.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
 |--|--|--|--|--|--|
