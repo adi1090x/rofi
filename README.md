@@ -20,7 +20,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 
 |Launchers|Sidemenus|
 |-|-|
-|![gif](images/launchers/launchers.gif)|![gif](images/android.gif)|
+|![gif](images/launchers.gif)|![gif](images/android.gif)|
 
 <details>
 <summary>Quick Links</summary>
