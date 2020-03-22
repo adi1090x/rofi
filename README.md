@@ -172,13 +172,14 @@ cd scripts
 ### App Launchers
 
 A collection for every app laucher i've used.
-Edit the `launcher.sh` file and change the **style** variable to set the style you like.
 
 ***Stuff you need***
 + *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + *Fonts* : [Fantasque & Iosevka](https://github.com/adi1090x/rofi/blob/master/fonts)
 + *Compton_tryone* : For Blur, [Here](https://github.com/tryone144/compton)
 
+> Edit the `launcher.sh` file and change the **style** variable to set the style you like.
+> Edit the selected `.rasi` file and *uncomment* the desired color/style. 
 > Click on thumbnails to enlarge the image/gif.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
