@@ -309,4 +309,5 @@ Same thing can be done with openbox by adding these lines to rc.xml file:
 
 ### Bottom Line
 + PR's, Issues, Contributions are welcome.
++ No PR's for color-schemes, they always endup looking similar.
 + Have Fun!
