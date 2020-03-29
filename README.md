@@ -27,7 +27,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 <summary>Quick Links</summary>
 
 - [Installation](https://github.com/adi1090x/rofi#installation)
-- [Album](https://www.buymeacoffee.com/posts)
+- [Album](https://www.buymeacoffee.com/adi1090x/posts)
 - [Applets](https://github.com/adi1090x/rofi#applets)
 - [Menus](https://github.com/adi1090x/rofi#menus)
 - [Launchers](https://github.com/adi1090x/rofi#app-launchers)
