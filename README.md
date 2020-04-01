@@ -17,11 +17,11 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 
 |Menus|Applets|
 |-|-|
-|![gif](images/menus/0.gif)|![gif](images/applets/0.gif)|
+|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/0.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/0.gif)|
 
 |Launchers|Sidemenus|
 |-|-|
-|![gif](images/launchers.gif)|![gif](images/android.gif)|
+|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/android.gif)|
 
 <details>
 <summary>Quick Links</summary>
@@ -107,7 +107,7 @@ cd scripts
 
 ### Applets
 
-![gif](images/applets.gif) <br />
+![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets.gif) <br />
 
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
@@ -122,19 +122,19 @@ cd scripts
 
 |Powermenu|Time|Network|Battery|
 |--|--|--|--|
-|![img](images/applets/1.png)|![img](images/applets/2.png)|![img](images/applets/3.gif)|![img](images/applets/4.gif)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/3.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/4.gif)|
 
 |Volume|Backlight|Screenshot|MPD|
 |--|--|--|--|
-|![img](images/applets/5.gif)|![img](images/applets/6.png)|![img](images/applets/7.png)|![img](images/applets/8.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/5.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/8.png)|
 
 |Quicklinks|Apps|
 |--|--|
-|![img](images/applets/9.png)|![img](images/applets/10.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/10.png)|
 
 ### Menus
 
-![gif](images/menus.gif) <br />
+![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus.gif) <br />
 
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
@@ -149,15 +149,15 @@ cd scripts
 
 |Powermenu|Time|Network|Battery|
 |--|--|--|--|
-|![img](images/menus/1.png)|![img](images/menus/2.png)|![img](images/menus/3.gif)|![img](images/menus/4.gif)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/3.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/4.gif)|
 
 |Volume|Backlight|Screenshot|MPD|
 |--|--|--|--|
-|![img](images/menus/5.gif)|![img](images/menus/6.gif)|![img](images/menus/7.png)|![img](images/menus/8.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/5.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/6.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/8.png)|
 
 |Quicklinks|Apps|
 |--|--|
-|![img](images/menus/9.png)|![img](images/menus/10.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/10.png)|
 
 ### Android Style Sidemenus
 
@@ -169,7 +169,7 @@ cd scripts
 - **Screenshot:** Take screenshots using [scrot](https://github.com/dreamer/scrot).
 - **Volume:** Control volume with dynamic icons for mute status.
 
-![gif](images/android.gif) <br />
+![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/android.gif) <br />
 
 ### App Launchers
 
@@ -188,11 +188,11 @@ A collection for every app laucher i've used.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
 |--|--|--|--|--|--|
-|![gif](images/launchers/1.gif)|![gif](images/launchers/2.gif)|![gif](images/launchers/3.gif)|![gif](images/launchers/4.gif)|![gif](images/launchers/5.gif)|![gif](images/launchers/6.gif)|
+|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/1.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/2.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/3.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/4.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/5.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/6.gif)|
 
 |Grid|Grid Round|Grid Full|Purple|Rainbow Sidebar|Rainbow|
 |--|--|--|--|--|--|
-|![gif](images/launchers/7.gif)|![gif](images/launchers/8.gif)|![gif](images/launchers/10.gif)|![gif](images/launchers/9.gif)|![gif](images/launchers/11.gif)|![gif](images/launchers/12.gif)|
+|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/7.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/8.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/10.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/9.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/11.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/12.gif)|
 
 ### Colorschemes
 
@@ -207,19 +207,19 @@ If you wish to change the colorscheme for only one specific applet/menu, you can
 
 |Material Dark|Material Light|
 |--|--|
-|![img](images/colors/md.gif)|![img](images/colors/ml.gif)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/md.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/ml.gif)|
 
 |Adapta-Nokto|Adapta|Arc-Dark|Arc|
 |--|--|--|--|
-|![img](images/colors/2.png)|![img](images/colors/1.png)|![img](images/colors/4.png)|![img](images/colors/3.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/4.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/3.png)|
 
 |adwaita|gruvbox|dark|armchair|darkpink|
 |--|--|--|--|--|
-|![img](images/colors/5.png)|![img](images/colors/6.png)|![img](images/colors/7.png)|![img](images/colors/8.png)|![img](images/colors/9.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/5.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/8.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/9.png)|
 
 |fresh|inside|party|sirin|minimo|
 |--|--|--|--|--|
-|![img](images/colors/10.png)|![img](images/colors/11.png)|![img](images/colors/12.png)|![img](images/colors/13.png)|![img](images/colors/14.png)|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/12.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/14.png)|
 
 ## Tips
 
@@ -266,7 +266,7 @@ click-left = backlightmenu
 Here's How it looks on polybar with different colorschemes for each applet...
 
 <p align="left">
-  <img src=images/bar.gif>
+  <img src=https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/bar.gif>
 </p>
 
 ### Use With i3
