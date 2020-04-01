@@ -1,0 +1,175 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    font:                           "Noto Sans 10";
+    show-icons:                     true;
+	icon-theme: 					"Breeze";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    threads:                        0;
+    scroll-method:                  0;
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Breeze Light-- */
+* {
+    background:                     #EFF0F1FF;
+    background-alt:                 #EFF0F1FF;
+    foreground:                     #000000A6;
+    border:               			#3DAEE9FF;
+    selected:               		#93CEE999;
+    urgent:                         #DA4453FF;
+}
+
+/* -- Breeze Dark-- */
+/*
+* {
+    background:                     #31363bff;
+    background-alt:                 #31363bff;
+    foreground:                     #f5f5f5e6;
+    border:               			#1d99f3ff;
+    selected:               		#3daee966;
+    urgent:                         #DA4453FF;
+}
+*/
+
+/* -- Black-- */
+/*
+* {
+    background:                     #000000ff;
+    background-alt:                 #000000ff;
+    foreground:                     #f5f5f5b3;
+    border:               			#1d99f3ff;
+    selected:               		#3daee966;
+    urgent:                         #DA4453FF;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+    border-radius:                  0px;
+    height:                         55%;
+    width:                          48%;
+    location:                       center;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0px 8px 0px 4px;
+	background-color: 				@background;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 16";
+}
+
+
+inputbar {
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		1px;
+    border-radius:                  2px;
+    border-color:                  	@border;
+    margin:                         0px 0px 0px 0px;
+    padding:                        5px 5px 5px 5px;
+    position:                       center;
+}
+
+
+entry {
+    background-color:               @background;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    blink:                          true;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               @background;
+    columns:                        6;
+    spacing:                        4px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background;
+    children:                       [ inputbar, listview ];
+    spacing:                       	15px;
+    padding:                        8px 8px 8px 8px;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  4px;
+    padding:                        10px 0px 10px 0px;
+}
+
+element-icon {
+    size:                           65px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         5px 10px 0px 10px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+    border-radius:                  9px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+}
+
+element selected {
+    background-color:               @selected;
+    text-color:                     @foreground;
+    border:                  		1px;
+    border-radius:                  2px;
+    border-color:                  	@border;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @foreground;
+}

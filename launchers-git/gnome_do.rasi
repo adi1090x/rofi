@@ -1,0 +1,203 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    font:                           "FantasqueSansMono Nerd Font 12";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    threads:                        0;
+    scroll-method:                  0;
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Classical -- */
+* {
+    background:                     #27639AFF;
+    background-color:               #27639AFF;
+    background-entry:               #00000033;
+    background-alt:                 #f2f2f240;
+    foreground:                     #f2f2f2EE;
+    foreground-selected:            #ffffffFF;
+    urgent:                         #E91E6366;
+    urgent-selected:                #E91E6377;
+}
+
+/* -- Transparent -- */
+/*
+* {
+    background:                     #00000000;
+    background-color:               #00000066;
+    background-entry:               #00000033;
+    background-alt:                 #f2f2f215;
+    foreground:                     #f2f2f2EE;
+    foreground-selected:            #ffffffFF;
+    urgent:                         #E91E6366;
+    urgent-selected:                #E91E6377;
+}
+*/
+
+/* -- Light -- */
+/*
+* {
+    background:                     #e5e5e5ff;
+    background-color:               #e5e5e5ff;
+    background-entry:               #00000033;
+    background-alt:                 #20202040;
+    foreground:                     #404040EE;
+    foreground-selected:            #252525FF;
+    urgent:                         #E91E6366;
+    urgent-selected:                #E91E6377;
+}
+*/
+
+/* -- Dark -- */
+/*
+* {
+    background:                     #252525ff;
+    background-color:               #252525ff;
+    background-entry:               #00000033;
+    background-alt:                 #10101040;
+    foreground:                     #e5e5e5EE;
+    foreground-selected:            #ffffffFF;
+    urgent:                         #E91E6366;
+    urgent-selected:                #E91E6377;
+}
+*/
+
+/* -- Black -- */
+/*
+* {
+    background:                     #000000ff;
+    background-color:               #000000ff;
+    background-entry:               #00000033;
+    background-alt:                 #101010ff;
+    foreground:                     #e5e5e5EE;
+    foreground-selected:            #ffffffFF;
+    urgent:                         #E91E6366;
+    urgent-selected:                #E91E6377;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+    border-radius:                  25px;
+    height:                         30%;
+    width:                          30%;
+    location:                       center;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						false;
+	padding: 						0px 8px 0px 4px;
+	background-color: 				@background;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 16";
+}
+
+inputbar {
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+    border-radius:                  30px;
+    margin:                         0px 0px 0px 0px;
+    padding:                        5px 5px 5px 5px;
+    position:                       center;
+}
+
+
+entry {
+    background-color:               @background;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0.5;
+    placeholder:                    " Search";
+    blink:                          true;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               @background;
+    columns:                        2;
+    spacing:                        4px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-color;
+    children:                       [ inputbar, listview ];
+    spacing:                        10px;
+    padding:                        10px 10px 10px 10px;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  25px;
+    padding:                        30px 0px 30px 0px;
+}
+
+element-icon {
+    size:                           86px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         5px 10px 0px 10px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+    border-radius:                  9px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+}
+
+element selected {
+    background-color:               @background-alt;
+    text-color:                     @foreground-selected;
+}
+
+element selected.urgent {
+    background-color:               @urgent-selected;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @foreground-selected;
+}
