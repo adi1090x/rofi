@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # this script is taken from screenfetch
 # I only slightly modify this script to add an option to show icon, useful for my tint2 executor
