@@ -194,6 +194,8 @@ A collection for every app laucher i've used.
 
 <details><summary>Previews</summary>
 
+An Album is [Here](https://www.buymeacoffee.com/p/45388).
+
 > Click on thumbnails to enlarge the image/gif.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
