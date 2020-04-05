@@ -120,6 +120,8 @@ cd scripts
 - **Time:** Display Time, Day & Date.
 - **Volume:** Display and control volume with dynamic icons for mute status.
 
+<details><summary>Previews</summary>
+
 |Powermenu|Time|Network|Battery|
 |--|--|--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/3.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/4.gif)|
@@ -131,6 +133,8 @@ cd scripts
 |Quicklinks|Apps|
 |--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets/10.png)|
+
+</details>
 
 ### Menus
 
@@ -147,6 +151,8 @@ cd scripts
 - **Time:** Display Time, Day, Month, Date.
 - **Volume:** Display and control volume with dynamic icons for mute status.
 
+<details><summary>Previews</summary>
+
 |Powermenu|Time|Network|Battery|
 |--|--|--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/3.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/4.gif)|
@@ -158,6 +164,8 @@ cd scripts
 |Quicklinks|Apps|
 |--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus/10.png)|
+
+</details>
 
 ### Android Style Sidemenus
 
@@ -184,6 +192,8 @@ A collection for every app laucher i've used.
 + Edit the `launcher.sh` file and change the **style** variable to set the style you like.
 + Edit the selected `.rasi` file and *uncomment* the desired color/style. 
 
+<details><summary>Previews</summary>
+
 > Click on thumbnails to enlarge the image/gif.
 
 |Icons|Icons Rainbow|Icons Fullscreen|Icons Sidebar|Icons Popup|Simple Dark|
@@ -193,6 +203,8 @@ A collection for every app laucher i've used.
 |Grid|Grid Round|Grid Full|Purple|Rainbow Sidebar|Rainbow|
 |--|--|--|--|--|--|
 |![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/7.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/8.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/10.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/9.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/11.gif)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers/12.gif)|
+
+</details>
 
 ### App Launchers (rofi-git)
 
@@ -209,6 +221,8 @@ A collection for every app laucher i've used.
 ***Styling***
 + Edit the `launcher.sh` file and change the **style** variable to set the style you like.
 + Edit the selected `.rasi` file and *uncomment* the desired color/style. 
+
+<details><summary>Previews</summary>
 
 |Blurry|Launchpad|
 |--|--|
@@ -242,6 +256,8 @@ A collection for every app laucher i've used.
 |--|--|--|--|
 |![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/9.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/10.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/11.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/13.png)|
 
+</details>
+
 ### Colorschemes
 
 The files are stored in *~/.config/rofi/themes/colorschemes*.
@@ -252,6 +268,8 @@ If you wish to change the colorscheme for only one specific applet/menu, you can
 ``` css
 @import "colorschemes/<colorscheme-name>.rasi"
 ```
+
+<details><summary>Previews</summary>
 
 |Material Dark|Material Light|
 |--|--|
@@ -268,6 +286,8 @@ If you wish to change the colorscheme for only one specific applet/menu, you can
 |fresh|inside|party|sirin|minimo|
 |--|--|--|--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/12.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/14.png)|
+
+</details>
 
 ## Tips
 
