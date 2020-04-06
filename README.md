@@ -187,6 +187,37 @@ cd scripts
 
 ![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/android.gif) <br />
 
+### Colorschemes
+
+The files are stored in *~/.config/rofi/themes/colorschemes*.
+To change the active colorscheme simply change the import line in *~/.config/rofi/themes/colors.rasi*.
+
+If you wish to change the colorscheme for only one specific applet/menu, you can add the line below after `@import "colors.rasi"` to the *~/.config/rofi/themes/<menu-name>.rasi* or *~/.config/rofi/themes/menu/<menu-name>.rasi* file.
+
+``` css
+@import "colorschemes/<colorscheme-name>.rasi"
+```
+
+<details><summary>Previews</summary>
+
+|Material Dark|Material Light|
+|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/md.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/ml.gif)|
+
+|Adapta-Nokto|Adapta|Arc-Dark|Arc|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/4.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/3.png)|
+
+|adwaita|gruvbox|dark|armchair|darkpink|
+|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/5.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/8.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/9.png)|
+
+|fresh|inside|party|sirin|minimo|
+|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/12.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/14.png)|
+
+</details>
+
 ### App Launchers
 
 A collection for application launcher, works with `rofi` from official arch repo.
@@ -324,37 +355,6 @@ An Album is [Here](https://www.buymeacoffee.com/p/45388).
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/I.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/J.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/K.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/L.png)
 
 </details>
-
-</details>
-
-### Colorschemes
-
-The files are stored in *~/.config/rofi/themes/colorschemes*.
-To change the active colorscheme simply change the import line in *~/.config/rofi/themes/colors.rasi*.
-
-If you wish to change the colorscheme for only one specific applet/menu, you can add the line below after `@import "colors.rasi"` to the *~/.config/rofi/themes/<menu-name>.rasi* or *~/.config/rofi/themes/menu/<menu-name>.rasi* file.
-
-``` css
-@import "colorschemes/<colorscheme-name>.rasi"
-```
-
-<details><summary>Previews</summary>
-
-|Material Dark|Material Light|
-|--|--|
-|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/md.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/ml.gif)|
-
-|Adapta-Nokto|Adapta|Arc-Dark|Arc|
-|--|--|--|--|
-|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/4.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/3.png)|
-
-|adwaita|gruvbox|dark|armchair|darkpink|
-|--|--|--|--|--|
-|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/5.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/8.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/9.png)|
-
-|fresh|inside|party|sirin|minimo|
-|--|--|--|--|--|
-|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/12.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/colors/14.png)|
 
 </details>
 
