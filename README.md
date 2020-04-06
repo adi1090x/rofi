@@ -13,7 +13,7 @@
 <a href="https://ko-fi.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/kofi.png" alt="Support me on ko-fi"></a>
 </p>
 
-A collection of custom *applets* and *menus* made using [rofi](https://github.com/davatorium/rofi) and its dmenu emulation, inspired by [rofi-menus](https://gitlab.com/vahnrr/rofi-menus).
+A collection of custom *applets* and *menus* made using [rofi](https://github.com/davatorium/rofi) and its dmenu emulation.
 
 |Menus|Applets|
 |-|-|
@@ -32,6 +32,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 - [Menus](https://github.com/adi1090x/rofi#menus)
 - [Launchers](https://github.com/adi1090x/rofi#app-launchers)
 - [Sidemenus](https://github.com/adi1090x/rofi#android-style-sidemenus)
+- [Slates](https://github.com/adi1090x/rofi#rofi-slates-(rofi-git))
 - [Colorschemes](https://github.com/adi1090x/rofi#colorschemes)
 - [Usage](https://github.com/adi1090x/rofi#tips)
   * [Polybar](https://github.com/adi1090x/rofi#use-with-polybar)
@@ -62,6 +63,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 + **Feather** For icons used in android style sidemenus, [Here](https://github.com/adi1090x/rofi/blob/master/fonts/feather.ttf)
 + **Fantasque** For App launchers, [Here](https://github.com/adi1090x/rofi/blob/master/fonts)
 + **Iosevka** For App launchers, [Here](https://github.com/adi1090x/rofi/blob/master/fonts)
++ **Noto Sans** For Some App launchers, [Here](https://github.com/googlefonts/noto-fonts)
 
 **Warning:** Do not change the `@icon-font` variable to another font, or you will end up messing with all applets/menus layout.
 
@@ -109,6 +111,8 @@ cd scripts
 
 ![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/applets.gif) <br />
 
+> Created & Tested With Rofi Version : **1.5.4**
+
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
 - **Battery:** Display battery percentage & charging-discharging status with dynamic icons.
@@ -140,6 +144,8 @@ cd scripts
 
 ![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/menus.gif) <br />
 
+> Created & Tested With Rofi Version : **1.5.4**
+
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Display and adjust screen brightness.
 - **Battery:** Display battery percentage & charging-discharging status with dynamic icons.
@@ -169,6 +175,8 @@ cd scripts
 
 ### Android Style Sidemenus
 
+> Created & Tested With Rofi Version : **1.5.4**
+
 - **Apps:** Shortcuts for most used applications.
 - **Backlight:** Adjust screen brightness.
 - **MPD:** Control the song play through [mpd](https://github.com/MusicPlayerDaemon/).
@@ -181,7 +189,9 @@ cd scripts
 
 ### App Launchers
 
-A collection for every app laucher i've used.
+A collection for application launcher, works with `rofi` from official arch repo.
+
+> Created & Tested With Rofi Version : **1.5.4**
 
 ***Stuff you need***
 + *Icon pack* : [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
@@ -257,6 +267,63 @@ An Album is [Here](https://www.buymeacoffee.com/p/45388).
 |GnomeDo Classic|GnomeDo Light|GnomeDo Black|GnomeDo Transparent|
 |--|--|--|--|
 |![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/9.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/10.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/11.png)|![gif](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_git/13.png)|
+
+</details>
+
+### Rofi Ribbon Launchers (rofi-git)
+
+> These themes/configs only works with `rofi-git(aur)`. You need to build latest rofi if you're not using *archlinux*.
+>
+> Tested With Rofi Version : **1.5.4-76-gca067234**
+
+![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/ribbon.gif)
+
+***Stuff you need***
++ *Latest Rofi* : [Here...](https://github.com/davatorium/rofi)
++ *Icon pack* : [Oranchelo](https://github.com/OrancheloTeam/oranchelo-icon-theme) (You can use any other icon pack as well)
++ *Fonts* : [Fantasque](https://github.com/adi1090x/rofi/blob/master/fonts)
+
+***Styling***
++ Edit the `launcher.sh` file and change the **style** variable to set the style you like.
++ Edit `~/.config/rofi/launchers-ribbon/styles/colors.rasi` file and *set* the desired color/style. 
+
+<details><summary>Previews</summary>
+
+|Ribbon Top|Ribbon Top Round|Ribbon Top Single|Ribbon Top Single Round|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/3.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/4.png)|
+
+|Ribbon Left|Ribbon Left Round|Ribbon Left Single|Ribbon Left Single Round|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/5.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/8.png)|
+
+|Ribbon Bottom|Ribbon Bottom Round|Ribbon Bottom Single|Ribbon Bottom Single Round|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/12.png)|
+
+|Ribbon Right|Ribbon Right Round|
+|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/14.png)|
+
+|Ribbon Full Left|Ribbon Full Bottom|Ribbon Full Top|Ribbon Full Right|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/17.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/16.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/15.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/18.png)|
+
+<details><summary>Styles</summary>
+
+|Bluish|Berry|Nordic|Nightly|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/A.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/B.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/C.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/D.png)
+
+|Gotham|Mask|Faded|Cocoa|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/E.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/F.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/G.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/H.png)
+
+|Cocoa|Nordic|Nightly|Berry|
+|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/I.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/J.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/K.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/L.png)
+
+</details>
 
 </details>
 

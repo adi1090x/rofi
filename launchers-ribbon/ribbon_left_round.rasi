@@ -1,0 +1,149 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    font:                           "FantasqueSansMono Nerd Font 10";
+    show-icons:                     true;
+	icon-theme: 					"Oranchelo";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    threads:                        0;
+    scroll-method:                  0;
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+@import "styles/colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0% 0% 0% 1.5%;
+	border-color:					@border;
+    border-radius:                  0% 0% 0% 2.5%;
+    height:                         50%;
+    width:                          40%;
+    location:                       center;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0% 0.5% 0% 0%;
+	background-color: 				@background;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 16";
+}
+
+
+inputbar {
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0% 0% 0.3% 0.8%;
+	border-color:					@border-alt;
+    border-radius:                  1.5% 0% 1.5% 1%;
+    margin:                         1% 0% 0% 0%;
+    padding:                        0.7% 0.7% 0.7% 0.7%;
+    position:                       center;
+}
+
+
+entry {
+    background-color:               @background;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search Applications";
+    padding:                        0.7% 0% 0% 0%;
+    blink:                          true;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               @background;
+    columns:                        4;
+    spacing:                        1%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background;
+	border:							0% 0% 0% 1.2%;
+    border-radius:                  0% 0% 0% 1.5%;
+	border-color:					@border-alt;
+    children:                       [ inputbar, listview ];
+    spacing:                       	2%;
+    padding:                        1% 1% 1% 1%;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        1% 0% 1% 0%;
+}
+
+element-icon {
+    size:                           63px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 1% 0% 1%;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+    border-radius:                  1%;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+}
+
+element selected {
+    background-color:               @selected;
+    text-color:                     @foreground;
+	border:							0% 0% 0.3% 0.2%;
+    border-radius:                  1.5% 0% 1.5% 1%;
+    border-color:                  	@border-alt;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @foreground;
+}
