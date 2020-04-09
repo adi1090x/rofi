@@ -33,6 +33,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 - [Sidemenus](https://github.com/adi1090x/rofi#android-style-sidemenus)
 - [Launchers](https://github.com/adi1090x/rofi#app-launchers)
 - [Ribbon](https://github.com/adi1090x/rofi#rofi-ribbon-launchers-rofi-git)
+- [Slates](https://github.com/adi1090x/rofi#rofi-slates-rofi-git)
 - [Colorschemes](https://github.com/adi1090x/rofi#colorschemes)
 - [Usage](https://github.com/adi1090x/rofi#tips)
   * [Polybar](https://github.com/adi1090x/rofi#use-with-polybar)
