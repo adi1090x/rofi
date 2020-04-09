@@ -307,7 +307,7 @@ An Album is [Here](https://www.buymeacoffee.com/p/45388).
 >
 > Tested With Rofi Version : **1.5.4-76-gca067234**
 
-![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/ribbon.gif)
+<!-- ![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/ribbon.gif) -->
 
 ***Stuff you need***
 + *Latest Rofi* : [Here...](https://github.com/davatorium/rofi)
@@ -355,6 +355,47 @@ An Album is [Here](https://www.buymeacoffee.com/p/45388).
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/I.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/J.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/K.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_ribbon/styles/L.png)
 
 </details>
+
+</details>
+
+### Rofi Slates (rofi-git)
+
+> These themes/configs only works with `rofi-git(aur)`. You need to build latest rofi if you're not using *archlinux*.
+>
+> Tested With Rofi Version : **1.5.4-76-gca067234**
+
+<!-- ![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/slate.gif) -->
+
+***Stuff you need***
++ *Latest Rofi* : [Here...](https://github.com/davatorium/rofi)
++ *Icon pack* : [Tela](https://github.com/vinceliuice/Tela-icon-theme) (You can use any other icon pack as well)
++ *Fonts* : [Fantasque](https://github.com/adi1090x/rofi/blob/master/fonts)
+
+***Styling***
++ Edit `~/.config/rofi/launchers-slate/styles/colors.rasi` file and set the `color` you like.
++ Edit the selected `color file` and *uncomment* the desired color/style.
+
+<details><summary>Previews</summary>
+
+|Amber|Amber Alt|Blue|Blue Alt|Blue-gray|Blue-gray Alt|Brown|Brown Alt|
+|--|--|--|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/1.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/2.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/3.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/4.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/5.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/6.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/7.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/8.png)|
+
+|Cyan|Cyan Alt|Deep-orange|Deep-orange Alt|Deep-purple|Deep-purple Alt|Green|Green Alt|
+|--|--|--|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/9.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/10.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/11.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/12.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/13.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/14.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/15.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/16.png)|
+
+|Indigo|Indigo Alt|Light-blue|Light-blue Alt|Light-green|Light-green Alt|Lime|Lime Alt|
+|--|--|--|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/17.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/18.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/19.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/20.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/21.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/22.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/23.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/24.png)|
+
+|Orange|Orange Alt|Pink|Pink Alt|Purple|Purple Alt|Red|Red Alt|
+|--|--|--|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/25.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/26.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/27.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/28.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/29.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/30.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/31.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/32.png)|
+
+|Teal|Teal Alt|Yellow|Yellow Alt|Gray|Gray Alt|Black|Black Alt|
+|--|--|--|--|--|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/33.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/34.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/35.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/36.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/37.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/38.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/39.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/40.png)|
 
 </details>
 
