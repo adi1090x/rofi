@@ -1,0 +1,1 @@
+../scripts/apps.sh
