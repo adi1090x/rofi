@@ -1,0 +1,24 @@
+@import "styles/colors.rasi"
+
+* {
+    background-color:       @background;
+    text-color:             @foreground;
+	font:				 	"FantasqueSansMono Nerd Font 14";
+}
+
+window {
+    width:      			280px;
+    padding:    			30px;
+    border:					1px;
+    border-radius:          0px;
+    border-color:           @border;
+    location:               center;
+    x-offset:               0;
+    y-offset:               -8%;
+}
+
+entry {
+    expand: 				true;
+    width: 					150px;
+    text-color:				@border;
+}

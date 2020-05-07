@@ -34,6 +34,7 @@ A collection of custom *applets* and *menus* made using [rofi](https://github.co
 - [Launchers](https://github.com/adi1090x/rofi#app-launchers)
 - [Ribbon](https://github.com/adi1090x/rofi#rofi-ribbon-launchers-rofi-git)
 - [Slates](https://github.com/adi1090x/rofi#rofi-slates-rofi-git)
+- [Powermenu](https://github.com/adi1090x/rofi#rofi-powermenu-rofi-git)
 - [Colorschemes](https://github.com/adi1090x/rofi#colorschemes)
 - [Usage](https://github.com/adi1090x/rofi#tips)
   * [Polybar](https://github.com/adi1090x/rofi#use-with-polybar)
@@ -397,6 +398,33 @@ An Album is [Here](https://www.buymeacoffee.com/p/45388).
 |Teal|Teal Alt|Yellow|Yellow Alt|Gray|Gray Alt|Black|Black Alt|
 |--|--|--|--|--|--|--|--|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/33.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/34.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/35.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/36.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/37.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/38.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/39.png)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/launchers_slate/40.png)|
+
+</details>
+
+### Rofi Powermenu (rofi-git)
+
+> These themes/configs only works with `rofi-git(aur)`. You need to build latest rofi if you're not using *archlinux*.
+>
+> Tested With Rofi Version : **1.5.4-110-g1a9e6450**
+
+***Stuff you need***
++ *Latest Rofi* : [Here...](https://github.com/davatorium/rofi)
++ *Fonts* : [Fantasque](https://github.com/adi1090x/rofi/blob/master/fonts)
++ *Fonts* : [Feather](https://github.com/adi1090x/rofi/blob/master/fonts)
+
+***Styling***
++ Edit the `~/.config/rofi/power/powermenu.sh` file and change the **style** variable to set the style you like.
++ Edit `~/.config/rofi/power/styles/colors.rasi` file and set the `color-scheme` you like.
+
+<details><summary>Previews</summary>
+
+|Style 1|Style 2|Style 3|
+|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/A.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/B.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/C.gif)|
+
+|Style 4|Style 5|Style 6|
+|--|--|--|
+|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/D.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/E.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/images/powermenu/F.gif)|
 
 </details>
 

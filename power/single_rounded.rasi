@@ -1,0 +1,152 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"FantasqueSansMono Nerd Font 14";
+    show-icons:                     false;
+	icon-theme: 					"Papirus";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+@import "styles/colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+    border-radius:                  15px;    
+    height:                         17%;
+    width:                          52.5%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
+	children: 						[ horibox ];
+}
+
+horibox {
+    background-color:               @background;
+    text-color:                     @foreground;
+	orientation: 					horizontal;
+	children: 						[ textbox-prompt-colon, listview ];
+    margin:                         0px 0px 0px 0px;
+    padding:                        10px 10px 10px 10px;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						4px 8px 4px 8px;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+}
+
+textbox-prompt-colon {
+	font:							"feather 32";
+	expand: 						false;
+	str: 							"";
+	background-color: 				@border;
+	text-color: 					@background;
+    border-radius:                  15px;
+    padding:                        35px 30px 30px 30px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		1px;
+    border-radius:                  0px;
+    border-color:                  	@border;
+    margin:                         0px 8% 0px 6%;
+    padding:                        4px 4px 4px 4px;
+    position:                       center;
+}
+
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    padding:                        4px 8px 4px 8px;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    blink:                          true;
+}
+
+case-indicator {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+listview {
+    background-color:               @background;
+    padding:                        0px 0px 0px 8px;
+    spacing:                        10px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         horizontal;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  15px;
+    padding:                        0px 0px 0px -5px;
+}
+
+element-icon {
+    size:                           65px;
+    border:                         0px;
+}
+
+element-text {
+	font:							"feather 32";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         30px 30px 29px 35px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+    border-radius:                  10px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+}
+
+element selected {
+    background-color:               @selected;
+    text-color:                     @foreground;
+    border:                  		1px;
+    border-radius:                  15px;
+    border-color:                  	@border;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @foreground;
+}
