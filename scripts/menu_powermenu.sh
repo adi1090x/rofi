@@ -24,10 +24,10 @@ options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 chosen="$(echo -e "$options" | $rofi_command -p "祥  $uptime    $cpu    $memory " -dmenu -selected-row 2)"
 case $chosen in
     $shutdown)
-        systemctl poweroff
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.PowerOff boolean:true
         ;;
     $reboot)
-        systemctl reboot
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot boolean:true
         ;;
     $lock)
         i3lock
@@ -35,7 +35,7 @@ case $chosen in
     $suspend)
         mpc -q pause
         amixer set Master mute
-        systemctl suspend
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:true
         ;;
     $logout)
         openbox --exit
