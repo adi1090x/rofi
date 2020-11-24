@@ -20,11 +20,11 @@
 </p>
 
 <p align="center">
-  <a href="a" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/applets-pink?style=for-the-badge"></a>
-  <a href="a" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/menu-pink?style=for-the-badge"></a>
-  <a href="a" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/android-pink?style=for-the-badge"></a>
-  <a href="a" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/launchers-pink?style=for-the-badge"></a>
-  <a href="a" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/powermenu-pink?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/rofi#applets" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/applets-pink?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/rofi#menu" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/menu-pink?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/rofi#android" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/android-pink?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/rofi#application-launchers" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/launchers-pink?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/rofi#powermenu" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/powermenu-pink?style=for-the-badge"></a>
 </p>
 
 <p align="center">A large collection of <a href="https://github.com/davatorium/rofi">Rofi</a> based custom <i>Menu</i>, <i>Applets</i>, <i>Launchers</i> & <i>Powermenus</i>.</p>
@@ -103,8 +103,8 @@ $ ./setup.sh
 
 > To use your programs, You can edit each script located inside following directories :
 >
-> `$HOME/.config/rofi/applets/applets`
-> `$HOME/.config/rofi/applets/menu`
+> `$HOME/.config/rofi/applets/applets` <br />
+> `$HOME/.config/rofi/applets/menu` <br />
 > `$HOME/.config/rofi/applets/android`
 
 ### Applets
