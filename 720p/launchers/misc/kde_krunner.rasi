@@ -1,0 +1,143 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"Noto Sans 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Breeze Light-- */
+* {
+    background:                     #EFF0F1FF;
+    background-alt:              	#00000000;
+    background-bar:                 #93CEE999;
+    foreground:                     #000000A6;
+    accent:			            	#3DAEE9FF;
+}
+
+/* -- Breeze Dark-- */
+/*
+* {
+    background:                     #31363bff;
+    background-alt:              	#00000000;
+    background-bar:                 #3daee966;
+    foreground:                     #f5f5f5e6;
+    accent:			            	#1d99f3ff;
+}
+*/
+
+/* -- Black-- */
+/*
+* {
+    background:                     #000000ff;
+    background-alt:              	#00000000;
+    background-bar:                 #3daee966;
+    foreground:                     #f5f5f5b3;
+    accent:			            	#1d99f3ff;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  0px;
+	width:							38%;
+    location:                       north;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0.30% 0.75% 0% -0.5%;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 10";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        -0.15% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							1px;
+    border-radius:                  4px;
+	border-color:					@accent;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        1;
+    lines:                          7;
+    spacing:                        0.5%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	1%;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        1%;
+}
+
+element-icon {
+    size:                           24px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0% 0% 0% 0.25%;
+}
+
+element selected {
+    background-color:               @background-bar;
+    text-color:                     @foreground;
+	border:							1px;
+    border-radius:                  4px;
+    border-color:                  	@accent;
+}

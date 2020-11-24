@@ -1,0 +1,36 @@
+/* -- Orange -- */
+
+* {
+shade1: #E65100;
+shade2: #EF6C00;
+shade3: #F57C00;
+shade4: #FB8C00;
+shade5: #FF9800;
+shade6: #FFA726;
+shade7: #FFB74D;
+shade8: #FFCC80;
+}
+
+/**** Comment One First To Use Another ****/
+
+/* -- Dark -- */
+* {
+    border:               			@shade1;
+    border-alt:               		@shade2;
+    background:                     @shade3;
+    background-alt:                 @shade3;
+    selected:               		@shade4;
+    foreground:                     #202020;
+    urgent:                         #DA4453;
+}
+
+/* -- light -- */
+* {
+    border:               			@shade8;
+    border-alt:               		@shade7;
+    background:                     @shade6;
+    background-alt:                 @shade6;
+    selected:               		@shade5;
+    foreground:                     #353535;
+    urgent:                         #DA4453;
+}

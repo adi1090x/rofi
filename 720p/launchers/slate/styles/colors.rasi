@@ -1,0 +1,12 @@
+/*
+ * Change the colorscheme for every menu simply by editing this file...
+ *
+ * Available Color Schemes
+ *
+ * Amber		Blue		Blue_gray		Black		Brown		Cyan			Deep_orange
+ * Deep_purple	Gray		Green			Indigo		Light_blue	Light_green		Lime
+ * Orange		Pink		Purple			Red			Teal		Yellow
+ *
+ */
+
+@import "Indigo.rasi"

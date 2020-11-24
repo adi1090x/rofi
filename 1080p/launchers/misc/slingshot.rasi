@@ -1,0 +1,132 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"Noto Sans 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Light-- */
+* {
+    background:                     #F5F5F5FF;
+    background-alt:              	#00000000;
+    background-bar:                 #D7D7D7FF;
+    foreground:                     #000000A6;
+    accent:			            	#80808066;
+}
+
+/* -- Dark -- */
+/*
+* {
+    background:                     #3E4148FF;
+    background-alt:                 #00000000;
+    background-bar:                 #363A3FFF;
+    foreground:                     #F5F5F5FF;
+    accent:			            	#00000066;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  4px;
+	width:							32%;
+    location:                       northwest;
+    x-offset:                       10px;
+    y-offset:                       50px;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0.30% 0.5% 0% 0%;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 10";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search Applications";
+    padding:                        -0.15% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0.1%;
+    border-radius:                  4px;
+	border-color:					@accent;
+    margin:                         0% 0% 0% 0%;
+    padding:                        0.50%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        5;
+    lines:                          3;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	1%;
+    padding:                        1.25% 0.65% 1.25% 0.65%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        2% 0% 2% 0%;
+}
+
+element-icon {
+    size:                           64px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @background-bar;
+    text-color:                     @foreground;
+	border:							0.1%;
+    border-radius:                  4px;
+    border-color:                  	@accent;
+}

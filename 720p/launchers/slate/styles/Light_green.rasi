@@ -1,0 +1,36 @@
+/* -- Light Green -- */
+
+* {
+shade1: #33691E;
+shade2: #558B2F;
+shade3: #689F38;
+shade4: #7CB342;
+shade5: #8BC34A;
+shade6: #9CCC65;
+shade7: #AED581;
+shade8: #C5E1A5;
+}
+
+/**** Comment One First To Use Another ****/
+
+/* -- Dark -- */
+* {
+    border:               			@shade1;
+    border-alt:               		@shade2;
+    background:                     @shade3;
+    background-alt:                 @shade3;
+    selected:               		@shade4;
+    foreground:                     #ffffff;
+    urgent:                         #DA4453;
+}
+
+/* -- light -- */
+* {
+    border:               			@shade8;
+    border-alt:               		@shade7;
+    background:                     @shade6;
+    background-alt:                 @shade6;
+    selected:               		@shade5;
+    foreground:                     #353535;
+    urgent:                         #DA4453;
+}

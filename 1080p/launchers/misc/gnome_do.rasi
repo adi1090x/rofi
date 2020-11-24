@@ -1,0 +1,165 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"FantasqueSansMono Nerd Font 12";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Classical -- */
+* {
+    background:                     #27639AFF;
+    background-alt:              	#00000000;
+    background-bar:                 #f2f2f240;
+    foreground:                     #f2f2f2EE;
+    accent:			            	#3DAEE966;
+}
+
+/* -- Transparent -- */
+/*
+* {
+    background:                     #00000000;
+    background-alt:              	#00000000;
+    background-bar:                 #f2f2f215;
+    foreground:                     #f2f2f2EE;
+    accent:			            	#3DAEE966;
+}
+*/
+
+/* -- Light -- */
+/*
+* {
+    background:                     #e5e5e5ff;
+    background-alt:              	#00000000;
+    background-bar:                 #20202040;
+    foreground:                     #404040EE;
+    accent:			            	#3DAEE966;
+}
+*/
+
+/* -- Dark -- */
+/*
+* {
+    background:                     #252525ff;
+    background-alt:              	#00000000;
+    background-bar:                 #10101040;
+    foreground:                     #e5e5e5EE;
+    accent:			            	#3DAEE966;
+}
+*/
+
+/* -- Black -- */
+/*
+* {
+    background:                     #000000ff;
+    background-alt:              	#00000000;
+    background-bar:                 #101010ff;
+    foreground:                     #e5e5e5EE;
+    accent:			            	#3DAEE966;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  25px;
+	width:							26%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						false;
+	padding: 						0%;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 12";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0.5;
+    placeholder:                    "  Search";
+    padding:                        0% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0px;
+	border-color:					@accent;
+    margin:                         0% 0% 0% 0%;
+    padding:                        0%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        2;
+    lines:                          1;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	2%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        2.5% 0% 2.5% 0%;
+}
+
+element-icon {
+    size:                           128px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @background-bar;
+    text-color:                     @foreground;
+	border:							0% 0% 0% 0%;
+    border-radius:                  15px;
+    border-color:                  	@accent;
+}

@@ -1,0 +1,132 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"Noto Sans 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     true;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Light -- */
+* {
+    background:                     #e5e5e5ff;
+    background-alt:              	#00000000;
+    background-bar:                 #FFFFFFFF;
+    foreground:                     #000000A6;
+    accent:			            	#80808066;
+    border:		               		#1A73E9FF;
+    selected:               		#D7D7D7FF;
+}
+
+/* -- Dark -- */
+/*
+* {
+    background:                     #212121ff;
+    background-alt:              	#00000000;
+    background-bar:                 #151515FF;
+    foreground:                     #EDEDEDFF;
+    accent:			            	#EDEDED4d;
+    border:		               		#1A73E9FF;
+    selected:               		#151515ff;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  0px;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0.25% 0.75% 0% -0.25%;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 12";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search Applications";
+    padding:                        -0.10% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @background-bar;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0% 0% 0.3% 0.2%;
+    border-radius:                  10%;
+	border-color:					@border;
+    margin:                         0% 50% 0% 0%;
+    padding:                        1.25%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        8;
+    lines:	                        3;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	5%;
+    padding:                        15% 10% 10% 10%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        3% 0% 3% 0%;
+}
+
+element-icon {
+    size:                           80px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @selected;
+    text-color:                     @foreground;
+	border:							0% 0% 0.3% 0.2%;
+    border-radius:                  25px;
+    border-color:                  	@border;
+}
