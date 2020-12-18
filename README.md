@@ -91,7 +91,7 @@ $ ./setup.sh
 |Applets|Description|Supported / Required Applications|
 |:-|:-|:-|
 |**`Apps`**|Shortcuts for most used applications.|`termite`/`urxvt`/`kitty`/`xterm`, `thunar`/`pcmanfm`, `geany`/`leafpad`/`mousepad`/`code`, `firefox`/`chromium`/`midori`, etc|
-|**`Backlight`**|Display and adjust screen brightness.|`blight` and `xbacklight`|
+|**`Backlight`**|Display and adjust screen brightness.|`brightnessctl`, `blight` and `xbacklight`|
 |**`Battery`**|Display battery percentage & charging-discharging status with dynamic icons.|`acpi` and `xfce4-power-manager-settings`|
 |**`MPD`**|Control the song play through [mpd](https://github.com/MusicPlayerDaemon/).|`mpd`, `mpc` and `dunst`|
 |**`Network`**|Display Online-Offline status with dynamic icons.|`dnsutils`, `nmcli`, `nmtui`, `bmon`, `nm-connection-editor` and `termite`|
