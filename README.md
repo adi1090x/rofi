@@ -47,7 +47,7 @@ Rofi is A window switcher, Application launcher and dmenu replacement. Rofi star
 
 ## Installation
 
-> **Everything here is created on Rofi version : 1.6.0-1**
+> **Everything here is created on Rofi version : 1.6.1-1**
 
 * First, Make sure you have the same (stable) version of rofi installed.
   - On Arch / Arch-based : **`pacman -S rofi`**

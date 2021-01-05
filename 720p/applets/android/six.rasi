@@ -56,7 +56,7 @@ element-text {
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0;
-    margin:                         5px 5px 15px 5px;
+    margin:                         5px 5px 30px 5px;
 }
 
 element normal.urgent,

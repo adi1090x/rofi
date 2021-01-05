@@ -88,7 +88,7 @@ element-text {
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         6.5% 4% 6.5% 4%;
+    margin:                         6.5% 4% 13.5% 4%;
 }
 
 element normal.urgent,

@@ -36,7 +36,7 @@ prompt {
     padding:                        10px;
 	background-color: 				@background-light;
 	text-color: 					@accent;
-    border:                  		0px 0px 3px 0px;
+    border:                  		0px 0px 2px 0px;
     border-radius:                  25px;
     border-color:                  	@accent;
 }
@@ -92,7 +92,7 @@ element-text {
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0;
-    margin:                         5px 10px 15px 10px;
+    margin:                         5px 10px 30px 10px;
 }
 
 element normal.urgent,
