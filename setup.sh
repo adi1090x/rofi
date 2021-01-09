@@ -36,16 +36,31 @@ install_themes() {
 	fi
 }
 
+# Clean up RES variable
+clean_up_RES() {
+	number_pattern='^[0-9]+p?$'
+	if [[ "${RES}" =~ ${number_pattern} ]]; then
+		RES="$(tr -d p <<<"$RES")p"
+	else
+		echo -e "Sorry, something went wrong when checking your" \
+			"custom resolution.\n"\
+			"Please enter the number of your resolution height" \
+			"in pixels, e.g. 1440."
+		exit 1
+	fi
+}
+
 # Main
 main() {
 	clear
 	cat <<- EOF
 		[*] Installing Rofi Themes...
-		
+
 		[*] Choose your screen resolution -
 		[1] 1920x1080
 		[2] 1366x768
-	
+		[3] Custom (Run ./generate-custom-resolution-config.py first)
+
 	EOF
 
 	read -p "[?] Select Option : "
@@ -56,6 +71,11 @@ main() {
 		install_themes
 	elif [[ $REPLY == "2" ]]; then
 		RES='720p'
+		install_fonts
+		install_themes
+	elif [[ $REPLY == "3" ]]; then
+		read -p "How many pixes high is your resolution? " RES
+		clean_up_RES
 		install_fonts
 		install_themes
 	else
