@@ -45,6 +45,7 @@ main() {
 		[*] Choose your screen resolution -
 		[1] 1920x1080
 		[2] 1366x768
+		[3] 3840x2160
 	
 	EOF
 
@@ -56,6 +57,10 @@ main() {
 		install_themes
 	elif [[ $REPLY == "2" ]]; then
 		RES='720p'
+		install_fonts
+		install_themes
+	elif [[ $REPLY == "3" ]]; then
+		RES='2160p'
 		install_fonts
 		install_themes
 	else
