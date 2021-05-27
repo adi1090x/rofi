@@ -74,6 +74,7 @@ $ ./setup.sh
 [*] Choose your screen resolution -
 [1] 1920x1080
 [2] 1366x768
+[3] 3840x2160
 
 [?] Select Option : 1
 
