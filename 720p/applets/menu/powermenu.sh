@@ -11,8 +11,8 @@ dir="$HOME/.config/rofi/applets/menu/configs/$style"
 rofi_command="rofi -theme $dir/powermenu.rasi"
 
 uptime=$(uptime -p | sed -e 's/up //g')
-cpu=$(sh ~/.config/rofi/bin/usedcpu)
-memory=$(sh ~/.config/rofi/bin/usedram)
+cpu=$($HOME/.config/rofi/bin/usedcpu)
+memory=$($HOME/.config/rofi/bin/usedram)
 
 # Options
 shutdown=""
