@@ -13,13 +13,6 @@
 </p>
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/adi1090x" target="_blank"><img alt="undefined" width="48px" src="https://raw.githubusercontent.com/adi1090x/files/master/other/1.png"></a>
-  <a href="https://ko-fi.com/adi1090x" target="_blank"><img alt="undefined" width="48px" src="https://raw.githubusercontent.com/adi1090x/files/master/other/2.png"></a>
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U3VK2SSVQWAPN" target="_blank"><img alt="undefined" width="48px" src="https://raw.githubusercontent.com/adi1090x/files/master/other/3.png"></a>
-  <a href="https://www.patreon.com/adi1090x" target="_blank"><img alt="undefined" width="48px" src="https://raw.githubusercontent.com/adi1090x/files/master/other/4.png"></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/adi1090x/rofi#applets" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/applets-pink?style=for-the-badge"></a>
   <a href="https://github.com/adi1090x/rofi#menu" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/menu-pink?style=for-the-badge"></a>
   <a href="https://github.com/adi1090x/rofi#android" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/android-pink?style=for-the-badge"></a>
