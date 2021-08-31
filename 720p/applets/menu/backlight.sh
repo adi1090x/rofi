@@ -16,7 +16,12 @@ msg() {
 }
 
 ## Get Brightness
-if [[ -f /usr/bin/blight ]]; then
+if [[ -f /bin/brightnessctl ]]; then
+	BNESS="$(brightnessctl get)"
+	MAX="$(brightnessctl max)"
+	PERC="$((BNESS*100/MAX))"
+	BLIGHT=${PERC%.*}
+elif [[ -f /usr/bin/blight ]]; then
 	DEVICE=$(ls /sys/class/backlight | head -n 1)
 	BNESS="$(blight -d $DEVICE get brightness)"
 	PERC="$(($BNESS*100/255))"
@@ -50,23 +55,29 @@ options="$ICON_UP\n$ICON_OPT\n$ICON_DOWN"
 ## Main
 chosen="$(echo -e "$options" | $rofi_command -p "$BLIGHT%  :  $MSG" -dmenu -selected-row 1)"
 case $chosen in
-    $ICON_UP)
-		if [[ -f /usr/bin/blight ]]; then
-			blight -d $DEVICE set +10% && $notify "Brightness Up $ICON_UP"
+    "$ICON_UP")
+		if [[ -f /bin/brightnessctl ]]; then
+			brightnessctl -q set +10% && $notify "Brightness Up $ICON_UP"
+		elif [[ -f /usr/bin/blight ]]; then
+			blight -d "$DEVICE" set +10% && $notify "Brightness Up $ICON_UP"
 		elif [[ -f /usr/bin/xbacklight ]]; then
 			xbacklight -inc 10 && $notify "Brightness Up $ICON_UP"
 		fi
         ;;
-    $ICON_DOWN)
-		if [[ -f /usr/bin/blight ]]; then
-			blight -d $DEVICE set -10% && $notify "Brightness Down $ICON_DOWN"
+    "$ICON_DOWN")
+		if [[ -f /bin/brightnessctl ]]; then
+			brightnessctl -q set 10%- && $notify "Brightness Down $ICON_DOWN"
+		elif [[ -f /usr/bin/blight ]]; then
+			blight -d "$DEVICE" set -10% && $notify "Brightness Down $ICON_DOWN"
 		elif [[ -f /usr/bin/xbacklight ]]; then
 			xbacklight -dec 10 && $notify "Brightness Down $ICON_DOWN"
 		fi
         ;;
-    $ICON_OPT)
-		if [[ -f /usr/bin/blight ]]; then
-			blight -d $DEVICE set 25% && $notify "Optimal Brightness $ICON_OPT"
+    "$ICON_OPT")
+		if [[ -f /bin/brightnessctl ]]; then
+			brightnessctl -q set 25% && $notify "Optimal Brightness $ICON_OPT"
+		elif [[ -f /usr/bin/blight ]]; then
+			blight -d "$DEVICE" set 25% && $notify "Optimal Brightness $ICON_OPT"
 		elif [[ -f /usr/bin/xbacklight ]]; then
 			xbacklight -set 30 && $notify "Optimal Brightness $ICON_OPT"
 		fi
