@@ -108,6 +108,7 @@ element-icon {
     border-radius:                  15px;
     background-color:               @se;
 	padding: 						2% 1% 2% 1%;
+    text-color:       inherit;
 }
 
 element-text {
@@ -116,6 +117,8 @@ element-text {
     vertical-align:                 0.5;
     margin:                         0.5% 0.25% 0.5% 0.25%;
     padding:                        1% 0.5% 1% 0.5%;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 element-text selected {

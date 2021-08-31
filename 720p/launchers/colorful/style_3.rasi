@@ -98,6 +98,8 @@ element {
 element-icon {
     size:                           24px;
     border:                         0px;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 element-text {
@@ -105,6 +107,8 @@ element-text {
     horizontal-align:               0;
     vertical-align:                 0.5;
     margin:                         0% 0.25% 0% 0.25%;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 element selected {
