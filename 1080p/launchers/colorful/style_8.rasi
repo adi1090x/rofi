@@ -14,8 +14,6 @@ configuration {
     display-drun: 					"Applications";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
 
@@ -101,11 +99,17 @@ element {
 }
 
 element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
     size:                           24px;
     border:                         0px;
 }
 
 element-text {
+    background-color: 				@al;
+    text-color:       				inherit;
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;

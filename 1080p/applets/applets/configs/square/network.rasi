@@ -8,10 +8,9 @@
  */
 
 configuration {
+    show-icons:                     false;
 	font:                      		"Comfortaa 12";
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
 
@@ -36,7 +35,7 @@ prompt {
     padding:                        10px;
 	background-color: 				@background-light;
 	text-color: 					@accent;
-    border:                  		2px 2px 2px 2px;
+    border:                  		2px 2px 3px 2px;
     border-radius:                  0px;
     border-color:                  	@accent;
 }
@@ -87,11 +86,13 @@ element {
 }
 
 element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
 	font:							"feather 20";
     expand:                         true;
     horizontal-align:               0.5;
-    vertical-align:                 0;
-    margin:                         5px 10px 30px 10px;
+    vertical-align:                 0.5;
+    margin:                         19px 10px 19px 10px;
 }
 
 element normal.urgent,

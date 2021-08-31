@@ -8,23 +8,13 @@
  */
 
 configuration {
-    lines:							10;
-    columns:						2;
     font: 							"Iosevka Nerd Font 12";
-    bw: 							0;
-    location: 						0;
-    padding: 						0;
     fixed-num-lines: 				true;
     show-icons: 					false;
     sidebar-mode: 					true;
-    separator-style: 				"none";
-    hide-scrollbar: 				true;
-    fullscreen: 					false;
-    fake-transparency: 				false;
     scroll-method: 					1;
     window-format: 					"[{w}] ··· {c} ···   {t}";
     click-to-exit: 					true;
-    show-match: 					false;
     combi-hide-mode-prefix: 		false;
     display-window: 				"";
     display-windowcd: 				"";
@@ -86,12 +76,19 @@ mainbox {
 }
 
 listview {
+    lines:							10;
+    columns:						2;
     fixed-height: 					0;
     border: 						0px;
     border-color: 					@ac;
     spacing: 						4px;
     scrollbar: 						false;
     padding: 						4px 0px 0px;
+}
+
+element-text, element-icon {
+    background-color: #00000000;
+    text-color:       inherit;
 }
 
 element {
@@ -142,6 +139,8 @@ sidebar {
 }
 
 button {
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
     margin: 						5px;
     padding: 						5px;
     text-color: 					@fg;

@@ -8,9 +8,8 @@
  */
 
 configuration {
+    show-icons:                     false;
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
 
@@ -52,11 +51,13 @@ element {
 }
 
 element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
 	font:							"feather 20";
     expand:                         true;
     horizontal-align:               0.5;
-    vertical-align:                 0;
-    margin:                         10px 10px 33px 10px;
+    vertical-align:                 0.5;
+    margin:                         26px 26px 26px 26px;
 }
 
 element normal.urgent,

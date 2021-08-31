@@ -34,16 +34,13 @@
 |-|-|-|
 |![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/previews/ribbon/main.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/previews/text/main.gif)|![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/previews/slate/main.gif)|
 
-#
-# These themes might not work on the latest rofi release (1.7.0), I'll update this repository soon.
-
 ## What is Rofi?
 
 Rofi is A window switcher, Application launcher and dmenu replacement. Rofi started as a clone of simpleswitcher and It has been extended with extra features, like an application launcher and ssh-launcher, and can act as a drop-in dmenu replacement, making it a very versatile tool. Rofi, like dmenu, will provide the user with a textual list of options where one or more can be selected. This can either be running an application, selecting a window, or options provided by an external script. More <a href="https://github.com/davatorium/rofi">here...</a>
 
 ## Installation
 
-> **Everything here is created on Rofi version : 1.6.1-1**
+> **Everything here is created on Rofi version : 1.7.0**
 
 * First, Make sure you have the same (stable) version of rofi installed.
   - On Arch / Arch-based : **`pacman -S rofi`**
