@@ -1,0 +1,30 @@
+configuration {
+	modi: "window,run,ssh,drun";
+	font: "Jetbrains Mono 13";
+	icon-theme: "Papirus";
+	show-icons: true;
+}
+
+* {
+	background-color: #282c34;
+	text-color: #abb2bf;
+	border: 0.5% 0.25% 0.5% 0.25%;
+	border-color: #282c34;
+	location: center;
+}
+
+prompt {
+	enabled: true;
+	padding: 0% 0.5% 0% 0%;
+	font: "Jetbrains Mono";
+	text-color: #abb2bf;
+	background-color: #282c34;
+}
+
+element-icon {
+	size: 25px;
+}
+
+element selected {
+	text-color: #98c379;
+}
