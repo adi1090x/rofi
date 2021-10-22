@@ -48,6 +48,8 @@ case $chosen in
     $files)
 		if [[ -f /usr/bin/thunar ]]; then
 			thunar &
+		elif [[ -f /usr/bin/nautilus ]]; then
+			nautilus &
 		elif [[ -f /usr/bin/pcmanfm ]]; then
 			pcmanfm &
 		else
@@ -57,6 +59,8 @@ case $chosen in
     $editor)
 		if [[ -f /usr/bin/geany ]]; then
 			geany &
+		elif [[ -f /usr/bin/nvim-qt ]]; then
+			nvim-qt &
 		elif [[ -f /usr/bin/leafpad ]]; then
 			leafpad &
 		elif [[ -f /usr/bin/mousepad ]]; then
