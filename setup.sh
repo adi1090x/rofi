@@ -3,37 +3,28 @@
 # Install script for rofi themes
 
 # Dirs
-DIR=`pwd`
-FONT_DIR="$HOME/.local/share/fonts"
-ROFI_DIR="$HOME/.config/rofi"
+DIR="${0%/*}"
+FONT_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/fonts"
+ROFI_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/rofi"
+
+set -eu
+exit_msg="[!] Failed to install.\n"
+trap 'echo -e $exit_msg' EXIT
 
 # Install Fonts
 install_fonts() {
 	echo -e "\n[*] Installing fonts..."
-	if [[ -d "$FONT_DIR" ]]; then
-		cp -rf $DIR/fonts/* "$FONT_DIR"
-	else
-		mkdir -p "$FONT_DIR"
-		cp -rf $DIR/fonts/* "$FONT_DIR"
-	fi
+	[[ -d "$FONT_DIR" ]] || mkdir -p "$FONT_DIR"
+	cp -r "$DIR"/fonts/* "$FONT_DIR"
 }
 
 # Install Themes
 install_themes() {
 	if [[ -d "$ROFI_DIR" ]]; then
 		echo -e "[*] Creating a backup of your rofi configs..."
-		mv "$ROFI_DIR" "${ROFI_DIR}.old"
-		{ mkdir -p "$ROFI_DIR"; cp -rf $DIR/$RES/* "$ROFI_DIR"; }
-	else
-		{ mkdir -p "$ROFI_DIR"; cp -rf $DIR/$RES/* "$ROFI_DIR"; }	
+		mv -f "$ROFI_DIR" "${ROFI_DIR}.old"
 	fi
-	if [[ -f "$ROFI_DIR/config.rasi" ]]; then
-		echo -e "[*] Successfully Installed.\n"
-		exit 0
-	else
-		echo -e "[!] Failed to install.\n"
-		exit 1
-	fi
+	cp -r "$DIR/$RES" "$ROFI_DIR"
 }
 
 # Main
@@ -50,18 +41,16 @@ main() {
 
 	read -p "[?] Select Option : "
 
-	if [[ $REPLY == "1" ]]; then
-		RES='1080p'
-		install_fonts
-		install_themes
-	elif [[ $REPLY == "2" ]]; then
-		RES='720p'
-		install_fonts
-		install_themes
-	else
-		echo -e "\n[!] Invalid Option, Exiting...\n"
-		exit 1
-	fi
+	case $REPLY in
+		1) RES='1080p' ;;
+		2) RES='720p' ;;
+		*) exit_msg="\n[!] Invalid Option, Exiting...\n"; exit 1 ;;
+	esac
+
+	install_fonts
+	install_themes
+	exit_msg="[*] Successfully Installed.\n"
+	exit 0
 }
 
 main
