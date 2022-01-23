@@ -61,8 +61,8 @@ run_response() {
     case "$response" in 
         YES|yes|[yY]) 
             if [[ "$run" == "systemctl suspend" ]]; then
-			    mpc -q pause
-			    amixer set Master mute
+                mpc -q pause
+                amixer set Master mute
                 $run
             else
                 $run
@@ -86,11 +86,11 @@ case $chosen in
         run_response "$(confirm_exit &)" "systemctl reboot"
         ;;
     $lock)
-		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock
-		elif [[ -f /usr/bin/betterlockscreen ]]; then
-			betterlockscreen -l
-		fi
+        if [[ -f /usr/bin/i3lock ]]; then
+        	i3lock
+        elif [[ -f /usr/bin/betterlockscreen ]]; then
+        	betterlockscreen -l
+        fi
         ;;
     $suspend)
         run_response "$(confirm_exit &)" "systemctl suspend"
