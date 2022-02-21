@@ -417,7 +417,7 @@ theme="ribbon_top_round"
 
 ### Slate
 
-A collection of launchers for solid color wallpaers.
+A collection of launchers for solid color wallpapers.
 
 ![img](https://raw.githubusercontent.com/adi1090x/files/master/rofi/previews/slate/main.gif)
 
