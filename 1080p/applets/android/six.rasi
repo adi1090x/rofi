@@ -10,7 +10,7 @@
 configuration {
     show-icons:                     false;
     disable-history:                false;
-	sidebar-mode: 					false;
+	  sidebar-mode: 					        false;
 }
 
 @import "colors.rasi"
@@ -30,7 +30,7 @@ window {
 }
 
 listview {
-    lines:							6;
+    lines:                          6;
     margin:                         8px;
     spacing:                        8px;
     cycle:                          true;
@@ -51,9 +51,9 @@ element {
 }
 
 element-text {
-    background-color: 				inherit;
-    text-color:       				inherit;
-	font:							"feather 20";
+    background-color:               inherit;
+    text-color:       				      inherit;
+	  font:							              "feather 20";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
@@ -76,9 +76,9 @@ element alternate.active {
 element selected {
     background-color:               @accent;
     text-color:                     @background;
-    border:                  		0px;
+    border:                  		    0px;
     border-radius:                  10px;
-    border-color:                  	@border;
+    border-color:                  	@accent;
 }
 
 element selected.urgent {
