@@ -112,7 +112,7 @@ element selected {
     text-color:                     @background;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	@border;
+    border-color:                  	@accent;
 }
 
 element selected.urgent {
