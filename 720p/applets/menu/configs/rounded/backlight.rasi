@@ -111,9 +111,9 @@ element alternate.active {
 element selected {
     background-color:               @accent;
     text-color:                     @background;
-    border:                  		0px;
+    border:                  		    0px;
     border-radius:                  20px;
-    border-color:                  	@border;
+    border-color:                   @accent;
 }
 
 element selected.urgent {
