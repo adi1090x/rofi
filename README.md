@@ -1,1 +1,1 @@
-rofi
+<!-- sponsors --><!-- sponsors -->
