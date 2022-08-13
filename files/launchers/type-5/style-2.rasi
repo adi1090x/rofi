@@ -1,0 +1,177 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+	modi:                       "drun,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               "APPS";
+    display-run:                "RUN";
+    display-filebrowser:        "FILES";
+    display-window:             "WINDOW";
+	drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
+	window-format:              "Class : {c}\nWorkspace : {w}";
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "Iosevka Nerd Font 10";
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border-radius:               12px;
+    cursor:                      "default";
+    background-image:            url("~/.config/rofi/launchers/images/gradient.png", width);
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     20px;
+    margin:                      40px;
+    padding:                     40px;
+    border-radius:               12px;
+    background-color:            white/50%;
+    children:                    [ "inputbar", "mode-switcher", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px 10%;
+    padding:                     0px 0px 10px 0px;
+    border:                      0px 0px 2px 0px;
+    border-radius:               0px;
+    border-color:                gray/20%;
+    background-color:            transparent;
+    children:                    [ "entry" ];
+}
+
+entry {
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  gray;
+    cursor:                      text;
+    placeholder:                 "Type to filter";
+    placeholder-color:           inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     3;
+    lines:                       3;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     40px;
+    margin:                      0px;
+    padding:                     20px 0px 0px 0px;
+    border:                      0px solid;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     15px;
+    border:                      1px solid;
+    border-radius:               8px;
+    border-color:                gray/30%;
+    background-color:            white;
+    text-color:                  black;
+    cursor:                      pointer;
+}
+element normal.active {
+    background-color:            #67FF80;
+    text-color:                  black;
+}
+element selected.normal {
+    background-color:            #FDD66F;
+    text-color:                  black;
+}
+element selected.active {
+    background-color:            #FF7F7C;
+    text-color:                  black;
+}
+element-icon {
+    background-color:            transparent;
+    size:                        48px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    expand:                      false;
+    spacing:                     20px;
+    margin:                      0px 10%;
+    background-color:            transparent;
+    text-color:                  white;
+}
+button {
+    font:                        "Iosevka Nerd Font Bold 10";
+    padding:                     6px;
+    border:                      0px solid;
+    border-radius:               100%;
+    background-color:            #719DF9;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            #F37277;
+    text-color:                  inherit;
+}
+
+/*****----- Message -----*****/
+error-message {
+    padding:                     20px;
+    background-color:            transparent;
+    text-color:                  black;
+}
+textbox {
+    padding:                     20px;
+    border-radius:               12px;
+    background-color:            white/30%;
+    text-color:                  black;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
