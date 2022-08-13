@@ -1,0 +1,1 @@
+../launchers/type-7/launcher.sh
