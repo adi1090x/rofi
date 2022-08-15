@@ -1,0 +1,1 @@
+../powermenu/type-3/powermenu.sh
