@@ -19,6 +19,7 @@ configuration {
 	application-fallback-icon: "Adwaita";
 /*	cache-dir: ;*/
 	steal-focus: false;
+/*	dpi: -1;*/
 
 	/*---------- Matching setting ----------*/
 	matching: "normal";
