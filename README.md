@@ -31,7 +31,15 @@
 
 **`Applets`** : _Coming soon_
 
-**`Powermenus`** : _Coming soon_
+**`Powermenus`**
+
+|Type 1|Type 2|Type 3|
+|--|--|--|
+|![img](previews/powermenu/type-1.gif)|![img](previews/powermenu/type-2.gif)|![img](previews/powermenu/type-3.gif)|
+
+|Type 4|Type 5|Type 6|
+|--|--|--|
+|![img](previews/powermenu/type-4.gif)|![img](previews/powermenu/type-5.gif)|![img](previews/powermenu/type-6.gif)|
 
 ## What is Rofi?
 
@@ -84,7 +92,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/gcg"><img src="https://github.com/gcg.png" width="60px" alt="Guney Can Gokoglu" /></a><a href="https://github.com/joesphpro"><img src="https://github.com/joesphpro.png" width="60px" alt="" /></a><!-- sponsors -->
+  <!-- sponsors --><!-- sponsors -->
 </p>
 
 ---
@@ -98,8 +106,10 @@ theme='style-1'
 
 **`Change Colors` :** Edit `~/.config/rofi/launchers/type-X/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
 ```css
-@import "../../colors/onedark.rasi"
+@import "~/.config/rofi/colors/onedark.rasi"
 ```
+
+> Colors in `type-5`, `type-6` and `type-7` are hard-coded (based on image colors) and can be changed by editing the respective **`style-X.rasi`** file.
 
 #### Previews
 
@@ -227,7 +237,78 @@ theme='style-1'
 _Coming Soon_
 
 ## Powermenus
-_Coming Soon_
+
+**`Change Style` :** Edit `~/.config/rofi/powermenu/type-X/powermenu.sh` script and edit the following line to use the style you like.
+```
+theme='style-1'
+```
+
+**`Change Colors` :** Edit `~/.config/rofi/powermenu/type-X/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
+```css
+@import "~/.config/rofi/colors/onedark.rasi"
+```
+
+> Colors in `type-5` and `type-6` are hard-coded (based on image colors) and can be changed by editing the respective **`style-X.rasi`** file.
+
+#### Previews
+
+<details>
+<summary><b>Type 1</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-1/1.png)|![img](previews/powermenu/type-1/2.png)|![img](previews/powermenu/type-1/3.png)|![img](previews/powermenu/type-1/4.png)|![img](previews/powermenu/type-1/5.png)|
+
+</details>
+
+<details>
+<summary><b>Type 2</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-2/1.png)|![img](previews/powermenu/type-2/2.png)|![img](previews/powermenu/type-2/3.png)|![img](previews/powermenu/type-2/4.png)|![img](previews/powermenu/type-2/5.png)|
+
+|Style 6|Style 7|Style 8|Style 9|Style 10|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-2/6.png)|![img](previews/powermenu/type-2/7.png)|![img](previews/powermenu/type-2/8.png)|![img](previews/powermenu/type-2/9.png)|![img](previews/powermenu/type-2/10.png)|
+
+</details>
+
+<details>
+<summary><b>Type 3</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-3/1.png)|![img](previews/powermenu/type-3/2.png)|![img](previews/powermenu/type-3/3.png)|![img](previews/powermenu/type-3/4.png)|![img](previews/powermenu/type-3/5.png)|
+
+</details>
+
+<details>
+<summary><b>Type 4</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-4/1.png)|![img](previews/powermenu/type-4/2.png)|![img](previews/powermenu/type-4/3.png)|![img](previews/powermenu/type-4/4.png)|![img](previews/powermenu/type-4/5.png)|
+
+</details>
+
+<details>
+<summary><b>Type 5</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-5/1.png)|![img](previews/powermenu/type-5/2.png)|![img](previews/powermenu/type-5/3.png)|![img](previews/powermenu/type-5/4.png)|![img](previews/powermenu/type-5/5.png)|
+
+</details>
+
+<details>
+<summary><b>Type 6</b></summary>
+
+|Style 1|Style 2|Style 3|Style 4|Style 5|
+|--|--|--|--|--|
+|![img](previews/powermenu/type-6/1.png)|![img](previews/powermenu/type-6/2.png)|![img](previews/powermenu/type-6/3.png)|![img](previews/powermenu/type-6/4.png)|![img](previews/powermenu/type-6/5.png)|
+
+</details>
 
 ## Tips
 
@@ -250,6 +331,66 @@ export PATH=$HOME/.config/rofi/scripts:$PATH
 ```
 
 > **Warning:** After changing the shell files, Logout and Login back again to update the `$PATH` environment variable.
+
+## Usage
+
+#### with polybar
+
+You can use these `launchers`, `powermenus` or `applets` with polybar by simply adding a **module** like that:
+
+```ini
+;; Application Launcher Module
+[module/launcher]
+type = custom/text
+
+content = 異
+content-background = black
+content-foreground = green
+
+click-left = ~/.config/rofi/launchers/type-1/launcher.sh
+click-right = launcher_t1
+
+;; Power Menu Module
+[module/powermenu]
+type = custom/text
+
+content = 襤
+content-background = black
+content-foreground = red
+
+click-left = ~/.config/rofi/powermenu/type-1/powermenu.sh
+click-right = powermenu_t1
+```
+
+#### with i3wm
+
+You can also use them with the `keybindings` on your **window manager**, For example:
+
+```bash
+set $mod Mod4
+
+bindsym $mod+p exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
+bindsym $mod+x exec --no-startup-id powermenu_t2
+```
+
+#### with Openbox
+
+Same thing can be done with `openbox` by adding these lines to **`rc.xml`** file:
+
+```xml
+  <keyboard>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>launcher_t3</command>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>~/.config/rofi/powermenu/type-3/powermenu.sh</command>
+      </action>
+    </keybind>
+  </keyboard>
+```
 
 ## FYI
 
