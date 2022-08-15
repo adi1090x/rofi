@@ -72,7 +72,7 @@ inputbar {
     spacing:                     10px;
     padding:                     40px 40px 155px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/launchers/images/d.png", width);
+    background-image:            url("~/.config/rofi/images/d.png", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry" ];

@@ -39,7 +39,7 @@ window {
     border-radius:               0px;
     border-color:                black;
     cursor:                      "default";
-    background-image:            url("~/.config/rofi/launchers/images/paper.png", none);
+    background-image:            url("~/.config/rofi/images/paper.png", none);
 }
 
 /*****----- Main Box -----*****/

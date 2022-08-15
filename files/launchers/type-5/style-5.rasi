@@ -42,7 +42,7 @@ window {
     border-radius:               20px;
     cursor:                      "default";
     background-color:            #162022;
-    background-image:            url("~/.config/rofi/launchers/images/flowers-1.png", width);
+    background-image:            url("~/.config/rofi/images/flowers-1.png", width);
 }
 
 /*****----- Main Box -----*****/
@@ -63,7 +63,7 @@ inputbar {
     border:                      2px;
     border-radius:               20px;
     border-color:                white;
-    background-image:            url("~/.config/rofi/launchers/images/flowers-3.png", none);
+    background-image:            url("~/.config/rofi/images/flowers-3.png", none);
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
@@ -108,7 +108,7 @@ listview {
     border:                      2px;
     border-radius:               20px;
     border-color:                white;
-    background-image:            url("~/.config/rofi/launchers/images/flowers-2.png", width);
+    background-image:            url("~/.config/rofi/images/flowers-2.png", width);
     cursor:                      "default";
 }
 

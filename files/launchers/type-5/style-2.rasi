@@ -41,7 +41,7 @@ window {
     padding:                     0px;
     border-radius:               12px;
     cursor:                      "default";
-    background-image:            url("~/.config/rofi/launchers/images/gradient.png", width);
+    background-image:            url("~/.config/rofi/images/gradient.png", width);
 }
 
 /*****----- Main Box -----*****/

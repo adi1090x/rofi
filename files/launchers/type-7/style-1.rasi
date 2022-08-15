@@ -71,7 +71,7 @@ inputbar {
     spacing:                     10px;
     padding:                     80px 60px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/launchers/images/a.png", width);
+    background-image:            url("~/.config/rofi/images/a.png", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry", "dummy", "mode-switcher" ];
