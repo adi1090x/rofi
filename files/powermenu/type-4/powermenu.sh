@@ -31,7 +31,6 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p "Goodbye ${USER}" \
 		-mesg "Uptime: $uptime" \
-		-select $lock \
 		-theme ${dir}/${theme}.rasi
 }
 
@@ -40,7 +39,6 @@ confirm_cmd() {
 	rofi -dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-select $yes \
 		-theme ${dir}/shared/confirm.rasi
 }
 

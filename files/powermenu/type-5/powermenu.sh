@@ -33,7 +33,6 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p " $USER@$host" \
 		-mesg " Last Login: $lastlogin |  Uptime: $uptime" \
-		-select $lock \
 		-theme ${dir}/${theme}.rasi
 }
 
@@ -47,7 +46,6 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-select $yes \
 		-theme ${dir}/${theme}.rasi
 }
 

@@ -31,7 +31,6 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p "$host" \
 		-mesg "Uptime: $uptime" \
-		-select $lock \
 		-theme ${dir}/${theme}.rasi
 }
 
@@ -45,7 +44,6 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-select $yes \
 		-theme ${dir}/${theme}.rasi
 }
 
