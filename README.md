@@ -47,7 +47,7 @@
 
 ## Installation
 
-> **Everything here is created on rofi version : `1.7.3-1`**
+> **Everything here is created on rofi version : `1.7.4`**
 
 * First, Make sure you have the same (stable) version of rofi installed.
   - On Arch / Arch-based : **`sudo pacman -S rofi`**

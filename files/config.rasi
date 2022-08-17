@@ -16,7 +16,6 @@ configuration {
 	normalize-match: true;
 	show-icons: true;
 	icon-theme: "Papirus";
-	application-fallback-icon: "Adwaita";
 /*	cache-dir: ;*/
 	steal-focus: false;
 /*	dpi: -1;*/
@@ -50,6 +49,11 @@ configuration {
 	run-command: "{cmd}";
 	run-list-command: "";
 	run-shell-command: "{terminal} -e {cmd}";
+
+	/*---------- Fallback Icon ----------*/
+	run,drun {
+		fallback-icon: "application-x-addon";
+	}
 
 	/*---------- Window switcher settings ----------*/
 	window-match-fields: "title,class,role,name,desktop";
@@ -100,6 +104,7 @@ configuration {
     }
 
 	/*---------- Keybindings ----------*/
+/*
 	kb-primary-paste: "Control+V,Shift+Insert";
 	kb-secondary-paste: "Control+v,Insert";
 	kb-clear-line: "Control+w";
@@ -125,9 +130,7 @@ configuration {
 	kb-mode-complete: "Control+l";
 	kb-row-left: "Control+Page_Up";
 	kb-row-right: "Control+Page_Down";
-	kb-row-up: "Up,Control+p,ISO_Left_Tab";
 	kb-row-down: "Down,Control+n";
-	kb-row-tab: "Tab";
 	kb-page-prev: "Page_Up";
 	kb-page-next: "Page_Down";
 	kb-row-first: "Home,KP_Home";
@@ -174,4 +177,5 @@ configuration {
 	me-select-entry: "MousePrimary";
 	me-accept-entry: "MouseDPrimary";
 	me-accept-custom: "Control+MouseDPrimary";
+*/
 }
