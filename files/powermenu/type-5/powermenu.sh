@@ -16,7 +16,7 @@ theme='style-1'
 # CMDs
 lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostname`
+host=$(uname -a | awk '{print $2}')
 
 # Options
 hibernate=''
