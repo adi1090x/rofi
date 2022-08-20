@@ -13,7 +13,7 @@ jobs:
       - name: Generate Sponsors 💖
         uses: JamesIves/github-sponsors-readme-action@v1
         with:
-          token: ${{ secrets.GEN_SPON_TKN }}
+          token: ${{ secrets.PAT_GHS }}
           file: 'README.md'
 
       - name: Deploy to GitHub Pages 🚀
