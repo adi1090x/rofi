@@ -1,0 +1,147 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "JetBrains Mono Nerd Font 10";
+    background:                  #231419;
+    background-alt:              #2D1E23;
+    foreground:                  #FFFFFF;
+    selected:                    #426647;
+    active:                      #2E3F34;
+    urgent:                      #D08261;
+}
+
+/*
+USE_BUTTONS=YES
+*/
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       800px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                @selected;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listview" ];
+}
+
+/*****----- Imagebox -----*****/
+imagebox {
+    spacing:                     0px;
+    padding:                     30px;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/e.jpg", width);
+    children:                    [ "inputbar", "dummy", "message" ];
+}
+
+/*****----- User -----*****/
+userimage {
+    margin:                      0px 0px;
+    border:                      10px;
+    border-radius:               10px;
+    border-color:                @background-alt;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/e.jpg", height);
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @urgent;
+    text-color:                  @background;
+    children:                    [ "dummy", "prompt", "dummy"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+prompt {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @active;
+    text-color:                  @foreground;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     3;
+    lines:                       2;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     30px;
+    margin:                      30px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     18px 10px;
+    border-radius:               20px;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        "feather bold 32";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            var(selected);
+    text-color:                  var(background);
+}
