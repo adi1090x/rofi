@@ -10,12 +10,12 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
-dir="$HOME/.config/rofi/powermenu/type-4"
-theme='style-5'
+dir="$HOME/.config/rofi/powermenu/type-3"
+theme='style-1'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=$(uname -a | awk '{print $2}')
+host=`uname -n`
 
 # Options
 shutdown=''
@@ -29,7 +29,7 @@ no=''
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
-		-p "Goodbye ${USER}" \
+		-p "Uptime: $uptime" \
 		-mesg "Uptime: $uptime" \
 		-theme ${dir}/${theme}.rasi
 }

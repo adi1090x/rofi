@@ -10,14 +10,16 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
-dir="$HOME/.config/rofi/powermenu/type-4"
-theme='style-5'
+dir="$HOME/.config/rofi/powermenu/type-5"
+theme='style-1'
 
 # CMDs
+lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=$(uname -a | awk '{print $2}')
+host=`uname -n`
 
 # Options
+hibernate=''
 shutdown=''
 reboot=''
 lock=''
@@ -29,17 +31,22 @@ no=''
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
-		-p "Goodbye ${USER}" \
-		-mesg "Uptime: $uptime" \
+		-p " $USER@$host" \
+		-mesg " Last Login: $lastlogin |  Uptime: $uptime" \
 		-theme ${dir}/${theme}.rasi
 }
 
 # Confirmation CMD
 confirm_cmd() {
-	rofi -dmenu \
+	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 350px;}' \
+		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
+		-theme-str 'listview {columns: 2; lines: 1;}' \
+		-theme-str 'element-text {horizontal-align: 0.5;}' \
+		-theme-str 'textbox {horizontal-align: 0.5;}' \
+		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-theme ${dir}/shared/confirm.rasi
+		-theme ${dir}/${theme}.rasi
 }
 
 # Ask for confirmation
@@ -49,7 +56,7 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$suspend\n$logout\n$hibernate\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Execute Command
@@ -60,6 +67,8 @@ run_cmd() {
 			systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
+		elif [[ $1 == '--hibernate' ]]; then
+			systemctl hibernate
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
@@ -88,6 +97,9 @@ case ${chosen} in
         ;;
     $reboot)
 		run_cmd --reboot
+        ;;
+    $hibernate)
+		run_cmd --hibernate
         ;;
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then

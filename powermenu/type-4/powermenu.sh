@@ -15,7 +15,7 @@ theme='style-5'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=$(uname -a | awk '{print $2}')
+host=`uname -n`
 
 # Options
 shutdown=''
