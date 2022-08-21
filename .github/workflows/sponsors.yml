@@ -13,9 +13,8 @@ jobs:
       - name: Generate Sponsors 💖
         uses: JamesIves/github-sponsors-readme-action@v1
         with:
-          token: ${{ secrets.PAT_GHS }}
+          token: ${{ secrets.PAT_GHS2 }}
           file: 'README.md'
-          template: '* [{{{ name }}}]({{{ url }}}) - {{{ login }}}'
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
