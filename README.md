@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/gcg"><img src="https://github.com/gcg.png" width="60px" alt="Guney Can Gokoglu" /></a><a href="https://github.com/joesphpro"><img src="https://github.com/joesphpro.png" width="60px" alt="" /></a><a href="https://github.com/RandomLegend"><img src="https://github.com/RandomLegend.png" width="60px" alt="RandomLegend" /></a><!-- sponsors -->
+  <!-- sponsors --><!-- sponsors -->
 </p>
 
 ---
