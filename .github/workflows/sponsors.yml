@@ -5,7 +5,7 @@ on:
     - cron: "*/1 * * * *"
 
 jobs:
-  deploy:
+  cron:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
