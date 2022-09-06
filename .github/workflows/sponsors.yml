@@ -2,7 +2,7 @@ name: Generate Sponsors README
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: 00 15 * * 0-6
 
 jobs:
   cron:
