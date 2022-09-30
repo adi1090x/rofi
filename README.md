@@ -19,7 +19,8 @@
 
 <p align="center">A huge collection of <a href="https://github.com/davatorium/rofi">Rofi</a> based custom <i>Applets</i>, <i>Launchers</i> & <i>Powermenus</i>.</p>
 
-**`Launchers`**
+<details>
+<summary><b><code>Launchers</code></b></summary>
 
 |Type 1|Type 2|Type 3|Type 4|
 |--|--|--|--|
@@ -29,9 +30,23 @@
 |--|--|--|
 |![img](previews/launchers/type-5.gif)|![img](previews/launchers/type-6.gif)|![img](previews/launchers/type-7.gif)|
 
-**`Applets`** : _Coming soon_
+</details>
 
-**`Powermenus`**
+<details>
+<summary><b><code>Applets</code></b></summary>
+
+|Type 1|Type 2|Type 3|
+|--|--|--|
+|![img](previews/applets/type-1.gif)|![img](previews/applets/type-2.gif)|![img](previews/applets/type-3.gif)|
+
+|Type 4|Type 5|
+|--|--|
+|![img](previews/applets/type-4.gif)|![img](previews/applets/type-5.gif)|
+
+</details>
+
+<details>
+<summary><b><code>Powermenus</code></b></summary>
 
 |Type 1|Type 2|Type 3|
 |--|--|--|
@@ -40,6 +55,8 @@
 |Type 4|Type 5|Type 6|
 |--|--|--|
 |![img](previews/powermenu/type-4.gif)|![img](previews/powermenu/type-5.gif)|![img](previews/powermenu/type-6.gif)|
+
+</details>
 
 ## What is Rofi?
 
@@ -92,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/gcg"><img src="https://github.com/gcg.png" width="60px" alt="Guney Can Gokoglu" /></a><a href="https://github.com/joesphpro"><img src="https://github.com/joesphpro.png" width="60px" alt="" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/elegantmachines"><img src="https://github.com/elegantmachines.png" width="60px" alt="Jason Armstrong" /></a><a href="https://github.com/weedy789"><img src="https://github.com/weedy789.png" width="60px" alt="Brandon Wiedman" /></a><a href="https://github.com/gusdnide"><img src="https://github.com/gusdnide.png" width="60px" alt="Gabriel " /></a><!-- sponsors -->
 </p>
 
 ---
@@ -238,7 +255,116 @@ theme='style-1'
 </details>
 
 ## Applets
-_Coming Soon_
+
+|Applets|Description|Required Applications|
+|:-|:-|:-|
+|**`Apps As Root`**|Open Applications as root|`pkexec` : `alacritty`, `thunar`, `geany`, `ranger`, `vim`|
+|**`Apps`**|Favorite or most used Applications|`alacritty`, `thunar`, `geany`, `firefox`, `ncmpcpp`, `xfce4-settings-manager`|
+|**`Battery`**|Display battery percentage & charging status with dynamic icons|`pkexec`, `acpi`, `powertop` `xfce4-power-manager-settings`|
+|**`Brightness`**|Display and adjust screen brightness|`light`, `xfce4-power-manager-settings`|
+|**`MPD`**|Control the song play through **`mpd`**|`mpd`, `mpc`|
+|**`Powermenu`**|A classic power menu, with Uptime|`systemd`, `betterlockscreen`|
+|**`Quicklinks`**|Bookmarks for most used websites|`firefox` or `chromium` or any other browser|
+|**`Screenshot`**|Take screenshots using **`maim`**|`maim`, `xrandr`, `dunst`, `xclip`|
+|**`Volume`**|Display and control volume with dynamic icons and mute status|`amixer` and `pavucontrol`|
+
+> To use your programs with these applets, Edit the scripts in `~/.config/rofi/applets/bin` directory.
+
+**`Change Theme` :** Edit `~/.config/rofi/applets/shared/theme.bash` script and edit the following line to use the type and style you like.
+```ini
+type="$HOME/.config/rofi/applets/type-1"
+style='style-1.rasi'
+```
+
+**`Change Colors` :** Edit `~/.config/rofi/applets/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
+```css
+@import "~/.config/rofi/colors/onedark.rasi"
+```
+
+> Colors in `type-4` and `type-5` are hard-coded (based on image colors) and can be changed by editing the respective **`style-X.rasi`** file.
+
+#### Previews
+
+<details>
+<summary><b>Apps as root</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/1/1.png)|![img](previews/applets/1/2.png)|![img](previews/applets/1/3.png)|![img](previews/applets/1/4.png)|![img](previews/applets/1/5.png)|
+
+</details>
+
+<details>
+<summary><b>Apps</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/2/1.png)|![img](previews/applets/2/2.png)|![img](previews/applets/2/3.png)|![img](previews/applets/2/4.png)|![img](previews/applets/2/5.png)|
+
+</details>
+
+<details>
+<summary><b>Battery</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/3/1.png)|![img](previews/applets/3/2.png)|![img](previews/applets/3/3.png)|![img](previews/applets/3/4.png)|![img](previews/applets/3/5.png)|
+
+</details>
+
+<details>
+<summary><b>Brightness</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/4/1.png)|![img](previews/applets/4/2.png)|![img](previews/applets/4/3.png)|![img](previews/applets/4/4.png)|![img](previews/applets/4/5.png)|
+
+</details>
+
+<details>
+<summary><b>MPD</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/5/1.png)|![img](previews/applets/5/2.png)|![img](previews/applets/5/3.png)|![img](previews/applets/5/4.png)|![img](previews/applets/5/5.png)|
+
+</details>
+
+<details>
+<summary><b>Powermenu</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/6/1.png)|![img](previews/applets/6/2.png)|![img](previews/applets/6/3.png)|![img](previews/applets/6/4.png)|![img](previews/applets/6/5.png)|
+
+</details>
+
+<details>
+<summary><b>Quicklinks</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/7/1.png)|![img](previews/applets/7/2.png)|![img](previews/applets/7/3.png)|![img](previews/applets/7/4.png)|![img](previews/applets/7/5.png)|
+
+</details>
+
+<details>
+<summary><b>Screenshot</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/8/1.png)|![img](previews/applets/8/2.png)|![img](previews/applets/8/3.png)|![img](previews/applets/8/4.png)|![img](previews/applets/8/5.png)|
+
+</details>
+
+<details>
+<summary><b>Volume</b></summary>
+
+|Type 1|Type 2|Type 3|Type 4|Type 5|
+|--|--|--|--|--|
+|![img](previews/applets/9/1.png)|![img](previews/applets/9/2.png)|![img](previews/applets/9/3.png)|![img](previews/applets/9/4.png)|![img](previews/applets/9/5.png)|
+
+</details>
 
 ## Powermenus
 
