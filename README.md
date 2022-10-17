@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/elegantmachines"><img src="https://github.com/elegantmachines.png" width="60px" alt="Jason Armstrong" /></a><a href="https://github.com/weedy789"><img src="https://github.com/weedy789.png" width="60px" alt="Brandon Wiedman" /></a><a href="https://github.com/gusdnide"><img src="https://github.com/gusdnide.png" width="60px" alt="Gabriel " /></a><a href="https://github.com/pi-infected"><img src="https://github.com/pi-infected.png" width="60px" alt="" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/weedy789"><img src="https://github.com/weedy789.png" width="60px" alt="Brandon Wiedman" /></a><a href="https://github.com/gusdnide"><img src="https://github.com/gusdnide.png" width="60px" alt="Gabriel " /></a><a href="https://github.com/pi-infected"><img src="https://github.com/pi-infected.png" width="60px" alt="" /></a><!-- sponsors -->
 </p>
 
 ---
