@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/attackofhubris"><img src="https://github.com/attackofhubris.png" width="60px" alt="" /></a><a href="https://github.com/weedy789"><img src="https://github.com/weedy789.png" width="60px" alt="Brandon Wiedman" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/weedy789"><img src="https://github.com/weedy789.png" width="60px" alt="Brandon Wiedman" /></a><!-- sponsors -->
 </p>
 
 ---
