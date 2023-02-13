@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/mbalasz"><img src="https://github.com/mbalasz.png" width="60px" alt="Mateusz Bałasz" /></a><!-- sponsors -->
 </p>
 
 ---
