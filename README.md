@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/abhas"><img src="https://github.com/abhas.png" width="60px" alt="Abhas Abhinav" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/abhas"><img src="https://github.com/abhas.png" width="60px" alt="Abhas Abhinav" /></a><a href="https://github.com/jandson-oliveira"><img src="https://github.com/jandson-oliveira.png" width="60px" alt="you0ou1" /></a><!-- sponsors -->
 </p>
 
 ---
