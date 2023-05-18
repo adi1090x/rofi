@@ -66,6 +66,8 @@
 
 > **Everything here is created on rofi version : `1.7.4`**
 
+### From source
+
 * First, Make sure you have the same (stable) version of rofi installed.
   - On Arch / Arch-based : **`sudo pacman -S rofi`**
   - On Debian / Ubuntu : **`sudo apt-get install rofi`**
@@ -97,6 +99,15 @@ $ ./setup.sh
 - That's it, These themes are now installed on your system.
 
 > **Note** : These themes are like an ecosystem, everything here is connected with each other in some way. So... before modifying anything by your own, make sure you know what you doing.
+
+### Arch Linux
+This collection is available on the [AUR](https://aur.archlinux.org/packages/rofi-adi1090x), you can install it with `makepkg` or using an AUR helper.
+
+```sh
+git clone https://aur.archlinux.org/rofi-adi1090x.git
+cd rofi-adi1090x
+makepkg -Ccsi
+```
 
 ---
 
