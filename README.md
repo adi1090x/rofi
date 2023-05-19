@@ -101,6 +101,7 @@ $ ./setup.sh
 > **Note** : These themes are like an ecosystem, everything here is connected with each other in some way. So... before modifying anything by your own, make sure you know what you doing.
 
 ### Arch Linux
+
 This collection is available on the [AUR](https://aur.archlinux.org/packages/rofi-adi1090x), you can install it with `makepkg` or using an AUR helper.
 
 ```sh
