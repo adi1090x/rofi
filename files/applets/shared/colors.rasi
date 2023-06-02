@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/onedark.rasi"
+@import "~/.config/rofi/colors/catppuccin.rasi"
