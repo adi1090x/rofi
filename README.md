@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/pedrosrtavares"><img src="https://github.com/pedrosrtavares.png" width="60px" alt="Pedro Tavares" /></a><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/LukeTheEngineer"><img src="https://github.com/LukeTheEngineer.png" width="60px" alt="Lukas Jackson" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/pedrosrtavares"><img src="https://github.com/pedrosrtavares.png" width="60px" alt="Pedro Tavares" /></a><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/LukeTheEngineer"><img src="https://github.com/LukeTheEngineer.png" width="60px" alt="Lukas Jackson" /></a><a href="https://github.com/neiesc"><img src="https://github.com/neiesc.png" width="60px" alt="Edinei Cavalcanti" /></a><!-- sponsors -->
 </p>
 
 ---
