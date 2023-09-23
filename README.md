@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/pedrosrtavares"><img src="https://github.com/pedrosrtavares.png" width="60px" alt="Pedro Tavares" /></a><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/machist"><img src="https://github.com/machist.png" width="60px" alt="" /></a><a href="https://github.com/neiesc"><img src="https://github.com/neiesc.png" width="60px" alt="Edinei Cavalcanti" /></a><a href="https://github.com/EzzielFawst"><img src="https://github.com/EzzielFawst.png" width="60px" alt="" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/Cir-0"><img src="https://github.com/Cir-0.png" width="60px" alt="David N" /></a><a href="https://github.com/pedrosrtavares"><img src="https://github.com/pedrosrtavares.png" width="60px" alt="Pedro Tavares" /></a><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/machist"><img src="https://github.com/machist.png" width="60px" alt="" /></a><a href="https://github.com/neiesc"><img src="https://github.com/neiesc.png" width="60px" alt="Edinei Cavalcanti" /></a><a href="https://github.com/EzzielFawst"><img src="https://github.com/EzzielFawst.png" width="60px" alt="" /></a><a href="https://github.com/Sosiaka"><img src="https://github.com/Sosiaka.png" width="60px" alt=" Alexander Borisov" /></a><!-- sponsors -->
 </p>
 
 ---
