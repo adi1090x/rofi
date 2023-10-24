@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/machist"><img src="https://github.com/machist.png" width="60px" alt="" /></a><a href="https://github.com/Sosiaka"><img src="https://github.com/Sosiaka.png" width="60px" alt=" Alexander Borisov" /></a><a href="https://github.com/alikaya"><img src="https://github.com/alikaya.png" width="60px" alt="Ali Kaya" /></a><a href="https://github.com/dkjxnvkdjnvkd888"><img src="https://github.com/dkjxnvkdjnvkd888.png" width="60px" alt="man sun" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/machist"><img src="https://github.com/machist.png" width="60px" alt="" /></a><a href="https://github.com/alikaya"><img src="https://github.com/alikaya.png" width="60px" alt="Ali Kaya" /></a><a href="https://github.com/dkjxnvkdjnvkd888"><img src="https://github.com/dkjxnvkdjnvkd888.png" width="60px" alt="man sun" /></a><!-- sponsors -->
 </p>
 
 ---
