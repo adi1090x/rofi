@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/dkjxnvkdjnvkd888"><img src="https://github.com/dkjxnvkdjnvkd888.png" width="60px" alt="man sun" /></a><a href="https://github.com/sk1ter"><img src="https://github.com/sk1ter.png" width="60px" alt="Sharipov Javlonbek" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/jeandutoit"><img src="https://github.com/jeandutoit.png" width="60px" alt="" /></a><a href="https://github.com/dkjxnvkdjnvkd888"><img src="https://github.com/dkjxnvkdjnvkd888.png" width="60px" alt="man sun" /></a><!-- sponsors -->
 </p>
 
 ---
