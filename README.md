@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/dkjxnvkdjnvkd888"><img src="https://github.com/dkjxnvkdjnvkd888.png" width="60px" alt="man sun" /></a><!-- sponsors -->
+  <!-- sponsors --><!-- sponsors -->
 </p>
 
 ---
