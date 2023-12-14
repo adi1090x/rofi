@@ -10,7 +10,7 @@
 ## style-1     style-2     style-3     style-4     style-5
 
 dir="$HOME/.config/rofi/launchers/type-5"
-theme='style-1'
+theme=${1:-'style-1'}
 
 ## Run
 rofi \
