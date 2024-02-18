@@ -51,7 +51,7 @@ configuration {
 	run-shell-command: "{terminal} -e {cmd}";
 
 	/*---------- Fallback Icon ----------*/
-	run,drun {
+	run-drun {
 		fallback-icon: "application-x-addon";
 	}
 
