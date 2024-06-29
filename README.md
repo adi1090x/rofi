@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/davidtoska"><img src="https://github.com/davidtoska.png" width="60px" alt="David Toska" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/davidtoska"><img src="https://github.com/davidtoska.png" width="60px" alt="David Toska" /></a><a href="https://github.com/milankozlovic"><img src="https://github.com/milankozlovic.png" width="60px" alt="Milan Kozlovic" /></a><!-- sponsors -->
 </p>
 
 ---
