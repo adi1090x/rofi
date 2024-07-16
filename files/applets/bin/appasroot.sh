@@ -6,7 +6,7 @@
 ## Applets : Run Applications as Root
 
 # Import Current Theme
-source "$HOME"/.config/rofi/applets/shared/theme.bash
+source "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/../shared/theme.bash
 theme="$type/$style"
 
 # Theme Elements
