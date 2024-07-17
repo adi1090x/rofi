@@ -9,25 +9,18 @@
 #
 ## style-1   style-2   style-3   style-4   style-5
 
-# Current Theme
 INPUT_THEME=$1  
-dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-if [ -z $INPUT_THEME ]; then
-    theme='style-1'
-elif [[ $1 == "-h" || $1 == "--help" ]]; then
-    echo "Usage: $0 [style-1..10]"
-    exit 0
-else
-    theme=$INPUT_THEME 
-    if [ ! -d ${dir}/$theme.rasi ]; then
-        echo "Theme not found!"
-        exit 1
-    fi
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+theme=$($SCRIPT_DIR/../../shared/theme.sh "$SCRIPT_DIR" '1' '5' "$INPUT_THEME")
+
+if [ $? -ne 0 ]; then
+    echo $theme
+    exit 1
 fi
 
 
 # CMDs
-uptime=$($dir/../../shared/uptime.sh)
+uptime=$($SCRIPT_DIR/../../shared/uptime.sh)
 host=`hostname`
 
 # Options
@@ -44,7 +37,7 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p "Uptime: $uptime" \
 		-mesg "Uptime: $uptime" \
-		-theme ${dir}/${theme}.rasi
+		-theme $theme
 }
 
 # Confirmation CMD
@@ -52,7 +45,7 @@ confirm_cmd() {
 	rofi -dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-theme ${dir}/shared/confirm.rasi
+		-theme ${SCRIPT_DIR}/shared/confirm.rasi
 }
 
 # Ask for confirmation

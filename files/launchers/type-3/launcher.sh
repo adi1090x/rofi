@@ -11,22 +11,17 @@
 ## style-6     style-7     style-8     style-9     style-10
 
 INPUT_THEME=$1  
-dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-if [ -z $INPUT_THEME ]; then
-    theme='style-10'
-elif [[ $1 == "-h" || $1 == "--help" ]]; then
-    echo "Usage: $0 [style-1..10]"
-    exit 0
-else
-    theme=$INPUT_THEME 
-    if [ ! -d ${dir}/$theme.rasi ]; then
-        echo "Theme not found!"
-        exit 1
-    fi
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+theme=$($SCRIPT_DIR/../../shared/theme.sh "$SCRIPT_DIR" '10' '10' "$INPUT_THEME")
+
+if [ $? -ne 0 ]; then
+    echo $theme
+    exit 1
 fi
+
 
 
 ## Run
 rofi \
     -show drun \
-    -theme ${dir}/${theme}.rasi
+    -theme $theme

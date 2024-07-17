@@ -64,7 +64,7 @@ inputbar {
     spacing:                     0px;
     padding:                     150px 40px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/i.jpg", width);
+    background-image:            url("./images/i.jpg", width);
     children:                    [ "textbox-prompt-colon", "dummy","prompt"];
 }
 
