@@ -6,7 +6,7 @@ MAX_THEME=$3
 INPUT_THEME=$4
 
 if [ -z "$INPUT_THEME" ]; then
-    theme="$DEFAULT_THEME"
+    theme="$SOURCE_DIR/style-$DEFAULT_THEME.rasi"
 elif [[ "$INPUT_THEME" == "-h" || "$INPUT_THEME" == "--help" ]]; then
     echo "Usage: $SOURCE_DIR [1..$MAX_THEME]"
     exit 1
