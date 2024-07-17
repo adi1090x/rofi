@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "../../../colors/onedark.rasi"
+@import "../../colors/onedark.rasi"

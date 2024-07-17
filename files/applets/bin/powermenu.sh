@@ -6,31 +6,17 @@
 ## Applets : Power Menu
 
 # Import Current Theme
+SCRIPT_INVOCATION="$0"
 INPUT_THEME="$1"
 SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-if [ -z "$INPUT_THEME" ]; then
-    source "$SCRIPT_DIR/../shared/theme.bash"
-    theme="$type/$style"
-elif [[ $1 == "-h" || $1 == "--help" ]]; then
-    echo "Usage: $0 [theme]"
-    exit 0
-else
-    theme="$INPUT_THEME"
-    if [ ! -d $theme ]; 
-        # prepend current script path if theme is not found 
-        theme="$SCRIPT_DIR/$theme"
-
-        if [ ! -d "$theme" ]; then
-          # fail if we still can't find it.
-          echo "Theme not found!"
-          exit 1
-    fi
-fi
-
+source "$SCRIPT_DIR/../shared/theme.bash"
 
 # Theme Elements
 prompt="`hostname`"
-mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
+
+uptime=$($SCRIPT_DIR/../../shared/uptime.sh)
+
+mesg="Uptime : $uptime"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'

@@ -6,26 +6,10 @@
 ## Applets : Favorite Applications
 
 # Import Current Theme
+SCRIPT_INVOCATION="$0"
 INPUT_THEME="$1"
 SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-if [ -z "$INPUT_THEME" ]; then
-    source "$SCRIPT_DIR/../shared/theme.bash"
-    theme="$type/$style"
-elif [[ $1 == "-h" || $1 == "--help" ]]; then
-    echo "Usage: $0 [theme]"
-    exit 0
-else
-    theme="$INPUT_THEME"
-    if [ ! -d $theme ]; 
-        # prepend current script path if theme is not found 
-        theme="$SCRIPT_DIR/$theme"
-
-        if [ ! -d "$theme" ]; then
-          # fail if we still can't find it.
-          echo "Theme not found!"
-          exit 1
-    fi
-fi
+source "$SCRIPT_DIR/../shared/theme.bash"
 
 
 # Theme Elements
@@ -41,12 +25,12 @@ elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
 fi
 
 # CMDs (add your apps here)
-term_cmd='alacritty'
-file_cmd='thunar'
-text_cmd='geany'
-web_cmd='firefox'
-music_cmd='alacritty -e ncmpcpp'
-setting_cmd='xfce4-settings-manager'
+term_cmd="${TERMINAL_CMD:-alacritty}"
+file_cmd="${FILE_BROWSER_CMD:-thunar}"
+text_cmd="${TEXT_EDITOR_CMD:-geany}"
+web_cmd="${WEB_BROWSER_CMD:-firefox}"
+music_cmd="${MUSIC_CMD:-alacritty -e ncmpcpp}"
+setting_cmd="${SETTINGS_CMD:-xfce4-settings-manager}"
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`

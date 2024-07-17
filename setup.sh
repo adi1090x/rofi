@@ -33,26 +33,27 @@ DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 # Install Fonts
 install_fonts() {
 	echo -e ${BBlue}"\n[*] Installing fonts to $FONT_DIR ${Color_Off}"
-	if [[ -d "$FONT_DIR" ]]; then
-		cp -rf $DIR/fonts/* "$FONT_DIR"
-	else
+
+	if [ ! -d "$FONT_DIR" ]; then
 		mkdir -p "$FONT_DIR"
-		cp -rf $DIR/fonts/* "$FONT_DIR"
 	fi
+
+	cp -rf $DIR/fonts/* "$FONT_DIR"
+
 	echo -e ${BYellow}"[*] Updating font cache" ${Color_Off}
 	fc-cache
 }
 
 # Install Themes
 install_themes() {
-	if [[ -d "$ROFI_DIR" ]]; then
-		echo -e ${BPurple}"[*] Creating a backup of your rofi configs in ${ROFI_DIR}.${USER}" ${Color_Off}
+	if [ -d "$ROFI_DIR" ]; then
+		echo -e ${BPurple}"[*] Creating a backup of your rofi configs in '${ROFI_DIR}.${USER}'" ${Color_Off}
 		mv "$ROFI_DIR" "${ROFI_DIR}.${USER}"
 	fi
-	echo -e ${BBlue}"[*] Installing rofi configs in $ROFI_DIR" ${Color_Off}
+	echo -e ${BBlue}"[*] Installing rofi configs in '$ROFI_DIR'" ${Color_Off}
 	{ mkdir -p "$ROFI_DIR"; cp -rf $DIR/files/* "$ROFI_DIR"; }
 
-	if [[ -f "$ROFI_DIR/config.rasi" ]]; then
+	if [ -f "$ROFI_DIR/config.rasi" ]; then
 		echo -e ${BGreen}"[*] Successfully Installed." ${Color_Off}
 		exit 0
 	else
@@ -63,9 +64,9 @@ install_themes() {
 
 # Main
 main() {
-	install_fonts
-    echo ""
 	install_themes
+    echo ""
+	install_fonts
     echo ""
 }
 

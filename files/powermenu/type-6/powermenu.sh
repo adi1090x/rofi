@@ -28,7 +28,7 @@ fi
 
 # CMDs
 lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
-uptime="`uptime -p | sed -e 's/up //g'`"
+uptime=$($dir/../../shared/uptime.sh)
 host=`hostname`
 
 # Options

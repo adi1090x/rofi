@@ -27,7 +27,7 @@ fi
 
 
 # CMDs
-uptime="`uptime -p | sed -e 's/up //g'`"
+uptime=$($dir/../../shared/uptime.sh)
 host=`hostname`
 
 # Options
