@@ -10,8 +10,21 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
+INPUT_THEME=$1  
 dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-theme='style-1'
+if [ -z $INPUT_THEME ]; then
+    theme='style-1'
+elif [[ $1 == "-h" || $1 == "--help" ]]; then
+    echo "Usage: $0 [style-1..10]"
+    exit 0
+else
+    theme=$INPUT_THEME 
+    if [ ! -d ${dir}/$theme.rasi ]; then
+        echo "Theme not found!"
+        exit 1
+    fi
+fi
+
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"

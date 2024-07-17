@@ -11,8 +11,21 @@
 ## style-6     style-7     style-8     style-9     style-10
 ## style-11    style-12    style-13    style-14    style-15
 
+INPUT_THEME=$1  
 dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-theme='style-1'
+if [ -z $INPUT_THEME ]; then
+    theme='style-1'
+elif [[ $1 == "-h" || $1 == "--help" ]]; then
+    echo "Usage: $0 [style-1..15]"
+    exit 0
+else
+    theme=$INPUT_THEME 
+    if [ ! -d ${dir}/$theme.rasi ]; then
+        echo "Theme not found!"
+        exit 1
+    fi
+fi
+
 
 ## Run
 rofi \

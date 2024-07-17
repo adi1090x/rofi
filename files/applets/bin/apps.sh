@@ -6,8 +6,22 @@
 ## Applets : Favorite Applications
 
 # Import Current Theme
-source "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/../shared/theme.bash
-theme="$type/$style"
+INPUT_THEME=$1  
+
+if [ -z $INPUT_THEME ]; then
+    source "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/../shared/theme.bash
+    theme="$type/$style"
+elif [[ $1 == "-h" || $1 == "--help" ]]; then
+    echo "Usage: $0 [theme]"
+    exit 0
+else
+    theme=$INPUT_THEME 
+    if [ ! -d $theme ]; then
+        echo "Theme not found!"
+        exit 1
+    fi
+fi
+
 
 # Theme Elements
 prompt='Applications'
