@@ -6,8 +6,10 @@
 ## Applets : Brightness
 
 # Import Current Theme
-source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="$type/$style"
+SCRIPT_INVOCATION="$0"
+INPUT_THEME="$1"
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+source "$SCRIPT_DIR/../shared/theme.bash"
 
 # Brightness Info
 backlight="$(printf "%.0f\n" `light -G`)"
