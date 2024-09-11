@@ -11,10 +11,16 @@
 ## style-6     style-7     style-8     style-9     style-10
 ## style-11    style-12    style-13    style-14    style-15
 
-dir="$HOME/.config/rofi/launchers/type-1"
-theme='style-1'
+INPUT_THEME=$1  
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+theme=$($SCRIPT_DIR/../../shared/theme.sh "$SCRIPT_DIR" '1' '15' "$INPUT_THEME")
+
+if [ $? -ne 0 ]; then
+    echo $theme
+    exit 1
+fi
 
 ## Run
 rofi \
     -show drun \
-    -theme ${dir}/${theme}.rasi
+    -theme $theme
