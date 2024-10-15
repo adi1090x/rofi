@@ -6,8 +6,10 @@
 ## Applets : Run Applications as Root
 
 # Import Current Theme
-source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="$type/$style"
+SCRIPT_INVOCATION="$0"
+INPUT_THEME="$1"
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+source "$SCRIPT_DIR/../shared/theme.bash"
 
 # Theme Elements
 prompt='Applications'
