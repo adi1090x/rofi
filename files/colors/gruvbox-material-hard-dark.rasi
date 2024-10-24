@@ -1,0 +1,18 @@
+/**
+ *
+ * Author : Axel Amores (xelser)
+ * Github : @xelser
+ *
+ * Credits : @sainnhe (https://github.com/sainnhe/gruvbox-material)
+ *
+ * Colors
+ **/
+
+* {
+    background:     #1D2021FF;
+    background-alt: #32302FFF;
+    foreground:     #D4BE98FF;
+    selected:       #7DAEA3FF;
+    active:         #A9B665FF;
+    urgent:         #EA6962FF;
+}
