@@ -64,7 +64,7 @@ inputbar {
     border-radius:               20px;
     border-color:                @selected;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/d.png", width);
+    background-image:            url("./images/d.png", width);
     text-color:                  @foreground;
     children:                    [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }

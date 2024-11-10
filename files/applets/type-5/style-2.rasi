@@ -60,7 +60,7 @@ mainbox {
 imagebox {
     border-radius:               20px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/j.jpg", height);
+    background-image:            url("./images/j.jpg", height);
     children:                    [ "dummy", "inputbar", "dummy" ];
 }
 
