@@ -57,7 +57,7 @@ imagebox {
     spacing:                     0px;
     padding:                     30px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/e.jpg", width);
+    background-image:            url("./images/e.jpg", width);
     children:                    [ "inputbar", "dummy", "message" ];
 }
 
@@ -68,7 +68,7 @@ userimage {
     border-radius:               10px;
     border-color:                @background-alt;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/e.jpg", height);
+    background-image:            url("./images/e.jpg", height);
 }
 
 /*****----- Inputbar -----*****/

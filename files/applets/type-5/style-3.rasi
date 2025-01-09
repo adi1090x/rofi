@@ -62,7 +62,7 @@ imagebox {
     border-radius:               100%;
     border-color:                @selected;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/g.png", height);
+    background-image:            url("./images/g.png", height);
     children:                    [ "dummy", "inputbar", "dummy" ];
 }
 

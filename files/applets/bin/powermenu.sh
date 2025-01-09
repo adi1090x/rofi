@@ -6,12 +6,17 @@
 ## Applets : Power Menu
 
 # Import Current Theme
-source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="$type/$style"
+SCRIPT_INVOCATION="$0"
+INPUT_THEME="$1"
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+source "$SCRIPT_DIR/../shared/theme.bash"
 
 # Theme Elements
 prompt="`hostname`"
-mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
+
+uptime=$($SCRIPT_DIR/../../shared/uptime.sh)
+
+mesg="Uptime : $uptime"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'

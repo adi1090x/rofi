@@ -9,12 +9,19 @@
 #
 ## style-1   style-2   style-3   style-4   style-5
 
-# Current Theme
-dir="$HOME/.config/rofi/powermenu/type-4"
-theme='style-5'
+
+INPUT_THEME=$1  
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+theme=$($SCRIPT_DIR/../../shared/theme.sh "$SCRIPT_DIR" '5' '5' "$INPUT_THEME")
+
+if [ $? -ne 0 ]; then
+    echo $theme
+    exit 1
+fi
+
 
 # CMDs
-uptime="`uptime -p | sed -e 's/up //g'`"
+uptime=$($SCRIPT_DIR/../../shared/uptime.sh)
 host=`hostname`
 
 # Options
@@ -31,7 +38,7 @@ rofi_cmd() {
 	rofi -dmenu \
 		-p "Goodbye ${USER}" \
 		-mesg "Uptime: $uptime" \
-		-theme ${dir}/${theme}.rasi
+		-theme $theme
 }
 
 # Confirmation CMD
@@ -39,7 +46,7 @@ confirm_cmd() {
 	rofi -dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-theme ${dir}/shared/confirm.rasi
+		-theme ${SCRIPT_DIR}/shared/confirm.rasi
 }
 
 # Ask for confirmation

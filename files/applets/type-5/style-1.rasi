@@ -59,7 +59,7 @@ mainbox {
 /*****----- Imagebox -----*****/
 imagebox {
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/e.jpg", height);
+    background-image:            url("./images/e.jpg", height);
     children:                    [ "dummy", "inputbar", "dummy" ];
 }
 
