@@ -73,18 +73,18 @@
 
 - Then, Clone this repository -
 ```
-$ git clone --depth=1 https://github.com/adi1090x/rofi.git
+git clone --depth=1 https://github.com/adi1090x/rofi.git
 ```
 
 - Change to cloned directory and make `setup.sh` executable -
 ```
-$ cd rofi
-$ chmod +x setup.sh
+cd rofi
+chmod +x setup.sh
 ```
 
 - Run `setup.sh` to install the configs -
 ```
-$ ./setup.sh
+./setup.sh
 
 [*] Installing fonts...
 [*] Updating font cache...
