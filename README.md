@@ -109,7 +109,7 @@ $ ./setup.sh
 </p>
 
 <p align="center">
-  <!-- sponsors --><a href="https://github.com/davidtoska"><img src="https:&#x2F;&#x2F;github.com&#x2F;davidtoska.png" width="60px" alt="User avatar: David Toska" /></a><a href="https://github.com/snubbi1954-elementary"><img src="https:&#x2F;&#x2F;github.com&#x2F;snubbi1954-elementary.png" width="60px" alt="User avatar: Carl Andersen" /></a><a href="https://github.com/dgxlab"><img src="https:&#x2F;&#x2F;github.com&#x2F;dgxlab.png" width="60px" alt="User avatar: David Vargas" /></a><a href="https://github.com/HunterR0se"><img src="https:&#x2F;&#x2F;github.com&#x2F;HunterR0se.png" width="60px" alt="User avatar: Hunter Rose" /></a><a href="https://github.com/kobinabrandon"><img src="https:&#x2F;&#x2F;github.com&#x2F;kobinabrandon.png" width="60px" alt="User avatar: Kobina Brandon" /></a><!-- sponsors -->
+  <!-- sponsors --><a href="https://github.com/davidtoska"><img src="https:&#x2F;&#x2F;github.com&#x2F;davidtoska.png" width="60px" alt="User avatar: David Toska" /></a><a href="https://github.com/snubbi1954-elementary"><img src="https:&#x2F;&#x2F;github.com&#x2F;snubbi1954-elementary.png" width="60px" alt="User avatar: Carl Andersen" /></a><a href="https://github.com/dgxlab"><img src="https:&#x2F;&#x2F;github.com&#x2F;dgxlab.png" width="60px" alt="User avatar: David Vargas" /></a><a href="https://github.com/kobinabrandon"><img src="https:&#x2F;&#x2F;github.com&#x2F;kobinabrandon.png" width="60px" alt="User avatar: Kobina Brandon" /></a><!-- sponsors -->
 </p>
 
 ---
