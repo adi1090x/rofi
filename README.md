@@ -517,6 +517,20 @@ Same thing can be done with `openbox` by adding these lines to **`rc.xml`** file
     </keybind>
   </keyboard>
 ```
+#### Pywal Support
+
+You can use [pywal](https://github.com/dylanaraps/pywal) to generate colorschemes for rofi.
+
+**`To use pywal colorschemes` :** Edit `~/.config/rofi/launchers/type-X/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
+
+***dark theme***
+```css
+@import "~/.config/rofi/colors/pywal-dark.rasi"
+```
+***light theme***
+```css
+@import "~/.config/rofi/colors/pywal-light.rasi"
+```
 
 ## FYI
 
