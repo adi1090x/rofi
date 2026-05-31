@@ -116,10 +116,15 @@ $ ./setup.sh
 
 ## Launchers
 
-**`Change Style` :** Edit `~/.config/rofi/launchers/type-X/launcher.sh` script and edit the following line to use the style you like.
-```
-theme='style-1'
-```
+**`Change Style` :** You have two options to change the launcher style
+
+1. Either edit the `~/.config/rofi/launchers/type-X/launcher.sh` script and edit the following line to use the style you like.
+
+        theme='style-1'
+
+2. Or pass "`style-X`" *(with `X` being the style number)* to the `launcher.sh` script. When using no argument, `style-1` will be used as default.
+
+        ~/.config/rofi/launchers/type-X/launcher.sh style-X
 
 **`Change Colors` :** Edit `~/.config/rofi/launchers/type-X/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
 ```css
@@ -364,10 +369,15 @@ style='style-1.rasi'
 
 ## Powermenus
 
-**`Change Style` :** Edit `~/.config/rofi/powermenu/type-X/powermenu.sh` script and edit the following line to use the style you like.
-```
-theme='style-1'
-```
+**`Change Style` :** You have two options to change the powermenu style
+
+1. Either edit the `~/.config/rofi/powermenu/type-X/powermenu.sh` script and edit the following line to use the style you like.
+
+        theme='style-1'
+
+2. Or pass "`style-X`" *(with `X` being the style number)* to the `powermenu.sh` script. When using no argument, `style-1` will be used as default.
+
+        ~/.config/rofi/powermenu/type-X/powermenu.sh style-X
 
 **`Change Colors` :** Edit `~/.config/rofi/powermenu/type-X/shared/colors.rasi` file and edit the following line to use the color-scheme you like.
 ```css
