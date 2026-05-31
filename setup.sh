@@ -12,7 +12,7 @@ BBlue='\033[1;34m'  BPurple='\033[1;35m' BCyan='\033[1;36m'  BWhite='\033[1;37m'
 
 ## Directories ----------------------------
 DIR=`pwd`
-FONT_DIR="$HOME/.local/share/fonts"
+FONT_DIR="$XDG_DATA_HOME/fonts" # or $XDG_CONFIG_HOME
 ROFI_DIR="$HOME/.config/rofi"
 
 # Install Fonts
@@ -25,7 +25,7 @@ install_fonts() {
 		cp -rf $DIR/fonts/* "$FONT_DIR"
 	fi
 	echo -e ${BYellow}"[*] Updating font cache...\n" ${Color_Off}
-	fc-cache
+	fc-cache -r
 }
 
 # Install Themes
