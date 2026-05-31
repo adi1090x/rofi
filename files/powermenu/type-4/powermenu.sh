@@ -90,9 +90,9 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
+		if command -v betterlockscreen >/dev/null 2>&1; then
 			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
+		elif command -v i3lock >/dev/null 2>&1; then
 			i3lock
 		fi
         ;;
