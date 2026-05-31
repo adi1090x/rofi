@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Mallar Bhattacharya
+ * Github : @mallar-B
+ * 
+ * Colors
+ **/
+
+* {
+    background: #111213;
+    background-alt: #111213;
+    foreground: #ccc4ba;
+    selected: #6C6658;
+    active: #4E4F47;
+    urgent: #897559;
+}
