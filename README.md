@@ -98,6 +98,203 @@ $ ./setup.sh
 
 > **Note** : These themes are like an ecosystem, everything here is connected with each other in some way. So... before modifying anything by your own, make sure you know what you doing.
 
+## NixOS / Home Manager
+
+This repository ships a [Home Manager](https://github.com/nix-community/home-manager) module that replaces `setup.sh` entirely. All theme files are installed declaratively, two commands (`rofi-launcher` and `rofi-powermenu` by default) are generated and added to your `PATH`, and every user-facing setting — color scheme, launcher style, power-menu actions, applet apps, quick links, and rofi's own config — is exposed as a typed Nix option.
+
+### Flake setup
+
+Add the flake as an input in your system or home-manager flake:
+
+```nix
+inputs = {
+  rofi-themes.url = "github:adi1090x/rofi";
+  # optional: keep rofi-themes on the same nixpkgs as the rest of your config
+  rofi-themes.inputs.nixpkgs.follows = "nixpkgs";
+};
+```
+
+Then import the module and enable it for a user:
+
+```nix
+# inside home-manager.users.<name> = { ... }; or a standalone HM config
+imports = [ inputs.rofi-themes.homeManagerModules.default ];
+
+programs.rofi-adi1090x.enable = true;
+```
+
+That's the minimum. Rofi, both generated command scripts, all theme files, and the bundled fonts are installed automatically.
+
+---
+
+### Full example
+
+```nix
+programs.rofi-adi1090x = {
+  enable = true;
+
+  # ── color scheme ────────────────────────────────────────────────────────
+  # One of: adapta arc black catppuccin cyberpunk dracula everforest
+  #         gruvbox lovelace navy nord onedark paper solarized tokyonight yousai
+  colorScheme = "catppuccin";
+
+  # ── launcher ────────────────────────────────────────────────────────────
+  launcher = {
+    commandName = "app-launcher";   # command added to PATH
+    type        = 4;                # layout family 1–7
+    style       = 7;                # style variant  1–15
+    show        = "drun";           # rofi -show mode: drun | run | window | filebrowser
+  };
+
+  # ── power menu ──────────────────────────────────────────────────────────
+  powermenu = {
+    commandName = "power-menu";     # command added to PATH
+    type        = 2;                # layout family 1–6
+    style       = 3;                # style variant  1–5
+    # set any action to null to remove it from the menu
+    lock        = "swaylock -f";
+    suspend     = "systemctl suspend";
+    hibernate   = null;             # hidden — not shown in the menu
+    logout      = "loginctl kill-session \"$XDG_SESSION_ID\"";
+    reboot      = "systemctl reboot";
+    shutdown    = "systemctl poweroff";
+  };
+
+  # ── applets ─────────────────────────────────────────────────────────────
+  applets = {
+    type  = 2;                      # layout family 1–5
+    style = 1;                      # style variant  1–3
+
+    # commands launched by the Apps applet
+    apps = {
+      terminal    = "kitty";
+      fileManager = "nautilus";
+      textEditor  = "code";
+      browser     = "firefox";
+      music       = "spotify";
+      settings    = "gnome-control-center";
+    };
+
+    # entries shown in the Quick Links applet (max 6)
+    quickLinks = [
+      { name = "GitHub";       url = "https://github.com/";               icon = ""; }
+      { name = "YouTube";      url = "https://www.youtube.com/";          icon = ""; }
+      { name = "NixOS";        url = "https://nixos.org/";                icon = ""; }
+      { name = "Hacker News";  url = "https://news.ycombinator.com/";     icon = ""; }
+    ];
+  };
+
+  # ── rofi global config ──────────────────────────────────────────────────
+  rofiConfig = {
+    modi        = "drun,run,window,filebrowser";
+    font        = "JetBrains Mono Nerd Font 12";
+    iconTheme   = "Papirus";
+    showIcons   = true;
+    terminal    = "kitty";
+    # verbatim lines injected into configuration { } in config.rasi
+    extraConfig = ''
+      display-drun: "Apps";
+      drun-display-format: "{name}";
+      disable-history: false;
+    '';
+  };
+
+  # ── fonts & dependencies ────────────────────────────────────────────────
+  installFonts     = true;   # install bundled Nerd Fonts (default: true)
+  withOptionalDeps = true;   # install acpi, light, mpd, maim, xclip, etc.
+  extraPackages    = [ pkgs.alacritty ];
+};
+```
+
+---
+
+### Option reference
+
+#### Top-level
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `enable` | bool | `false` | Master switch |
+| `colorScheme` | enum | `"onedark"` | Color scheme for all applets — see [Color Schemes](#color-schemes) below |
+| `installFonts` | bool | `true` | Install bundled TTF fonts into `~/.local/share/fonts/rofi-adi1090x` |
+| `withOptionalDeps` | bool | `false` | Install applet runtime deps: acpi, light, mpd, mpc-cli, maim, xrandr, dunst, xclip, alsa-utils, pavucontrol, polkit |
+| `extraPackages` | list | `[]` | Any additional packages to add alongside rofi |
+
+#### `launcher.*`
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `commandName` | string | `"rofi-launcher"` | Name of the generated executable placed on `PATH` |
+| `type` | 1–7 | `1` | Launcher layout family — see [Launchers](#launchers) |
+| `style` | 1–15 | `1` | Style variant within the chosen type |
+| `show` | string | `"drun"` | Rofi mode passed to `-show`: `drun`, `run`, `window`, `filebrowser` |
+
+#### `powermenu.*`
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `commandName` | string | `"rofi-powermenu"` | Name of the generated executable placed on `PATH` |
+| `type` | 1–6 | `1` | Power menu layout family — see [Powermenus](#powermenus) |
+| `style` | 1–5 | `1` | Style variant within the chosen type |
+| `lock` | string or null | `null` | Screen-lock command; `null` hides the entry from the menu |
+| `suspend` | string or null | `"systemctl suspend"` | Suspend command; `null` hides the entry |
+| `hibernate` | string or null | `null` | Hibernate command; `null` hides the entry |
+| `logout` | string or null | `loginctl kill-session …` | Logout command; `null` hides the entry |
+| `reboot` | string or null | `"systemctl reboot"` | Reboot command; `null` hides the entry |
+| `shutdown` | string or null | `"systemctl poweroff"` | Power-off command; `null` hides the entry |
+
+> All power menu actions show a confirmation dialog before executing.
+
+#### `applets.*`
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `type` | 1–5 | `1` | Layout family for all applet scripts — see [Applets](#applets) |
+| `style` | 1–3 | `1` | Style variant within the chosen type |
+| `apps.terminal` | string | `"alacritty"` | Terminal emulator (Apps applet) |
+| `apps.fileManager` | string | `"thunar"` | File manager (Apps applet) |
+| `apps.textEditor` | string | `"geany"` | Text editor (Apps applet) |
+| `apps.browser` | string | `"firefox"` | Web browser (Apps applet) |
+| `apps.music` | string | `"alacritty -e ncmpcpp"` | Music player command (Apps applet) |
+| `apps.settings` | string | `"xfce4-settings-manager"` | System settings app (Apps applet) |
+| `quickLinks` | list of `{name, url, icon}` | 6 web links | Entries for the Quick Links applet (max 6 are used) |
+
+Each `quickLinks` entry takes:
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `name` | string | ✓ | Label displayed in the rofi menu |
+| `url` | string | ✓ | URL opened with `xdg-open` when selected |
+| `icon` | string | — | Optional Nerd-Font icon character prepended to the label |
+
+#### `rofiConfig.*`
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `modi` | string | `"drun,run,filebrowser,window"` | Comma-separated list of enabled rofi modes |
+| `terminal` | string | `"rofi-sensible-terminal"` | Terminal used by rofi for run-in-terminal |
+| `font` | string | `"Mono 12"` | Font string passed to rofi |
+| `iconTheme` | string | `"Papirus"` | Icon theme name |
+| `showIcons` | bool | `true` | Show application icons next to entries |
+| `extraConfig` | lines | `""` | Verbatim lines injected into `configuration { }` in `config.rasi` |
+
+---
+
+### What the module manages
+
+| Path | How it is created |
+|---|---|
+| `~/.config/rofi/config.rasi` | Generated from `rofiConfig.*` options |
+| `~/.config/rofi/applets/shared/theme.bash` | Generated from `applets.type` / `applets.style` |
+| `~/.config/rofi/applets/shared/colors.rasi` | Generated from `colorScheme` |
+| `~/.config/rofi/applets/bin/apps.sh` | Generated from `applets.apps.*` |
+| `~/.config/rofi/applets/bin/quicklinks.sh` | Generated from `applets.quickLinks` |
+| `~/.config/rofi/applets/bin/*.sh` (all others) | Symlinked read-only from the Nix store |
+| `~/.config/rofi/{colors,launchers,powermenu,scripts,images}` | Symlinked read-only from the Nix store |
+| `~/.local/share/fonts/rofi-adi1090x/` | Symlinked (when `installFonts = true`) |
+
+> Generated files are updated automatically on `home-manager switch`. Because the theme directories are read-only Nix store symlinks, editing `.rasi` files directly is not supported — use the options above, or add `xdg.configFile` overrides in your home config for one-off changes.
+
 ---
 
 <p align="center">
@@ -458,6 +655,8 @@ export PATH=$HOME/.config/rofi/scripts:$PATH
 
 > **Warning:** After changing the shell files, Logout and Login back again to update the `$PATH` environment variable.
 
+> **Nix users:** The [Home Manager module](#nixos--home-manager) adds the configured `launcher.commandName` and `powermenu.commandName` executables directly to your `PATH` — no manual `$PATH` editing needed.
+
 ## Usage
 
 #### with polybar
@@ -488,6 +687,24 @@ click-left = ~/.config/rofi/powermenu/type-1/powermenu.sh
 click-right = powermenu_t1
 ```
 
+If you are using the **[Home Manager module](#nixos--home-manager)**, use the command names configured in `launcher.commandName` and `powermenu.commandName` (defaults: `rofi-launcher` and `rofi-powermenu`):
+
+```ini
+[module/launcher]
+type = custom/text
+content = 異
+content-background = black
+content-foreground = green
+click-left = rofi-launcher
+
+[module/powermenu]
+type = custom/text
+content = 襤
+content-background = black
+content-foreground = red
+click-left = rofi-powermenu
+```
+
 #### with i3wm
 
 You can also use them with the `keybindings` on your **window manager**, For example:
@@ -497,6 +714,15 @@ set $mod Mod4
 
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
 bindsym $mod+x exec --no-startup-id powermenu_t2
+```
+
+With the **[Home Manager module](#nixos--home-manager)**:
+
+```bash
+set $mod Mod4
+
+bindsym $mod+p exec --no-startup-id rofi-launcher
+bindsym $mod+x exec --no-startup-id rofi-powermenu
 ```
 
 #### with Openbox
@@ -513,6 +739,23 @@ Same thing can be done with `openbox` by adding these lines to **`rc.xml`** file
     <keybind key="W-x">
       <action name="Execute">
         <command>~/.config/rofi/powermenu/type-3/powermenu.sh</command>
+      </action>
+    </keybind>
+  </keyboard>
+```
+
+With the **[Home Manager module](#nixos--home-manager)**:
+
+```xml
+  <keyboard>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>rofi-launcher</command>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>rofi-powermenu</command>
       </action>
     </keybind>
   </keyboard>
