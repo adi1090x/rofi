@@ -134,6 +134,10 @@ element normal.normal {
     background-color:            @background;
     text-color:                  @foreground;
 }
+element alternate.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
 element selected.normal {
     background-color:            @selected;
     text-color:                  @background;
