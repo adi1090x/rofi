@@ -7,9 +7,10 @@
  *
  * Available Colors Schemes
  *
- * adapta    catppuccin    everforest    navy       paper
- * arc       cyberpunk     gruvbox       nord       solarized
- * black     dracula       lovelace      onedark    yousai
+ * adapta        cyberpunk     lovelace    paper
+ * arc           dracula       navy        solarized
+ * black         everforest    nord        tokyonight
+ * catppuccin    gruvbox       onedark     yousai
  *
  **/
 
