@@ -1,0 +1,18 @@
+/**
+ *
+ * Author : Axel Amores (xelser)
+ * Github : @xelser
+ *
+ * Credits : Catppuccin Team (https://github.com/catppuccin)
+ *
+ * Colors
+ **/
+
+* {
+    background:     #24273AFF;
+    background-alt: #363A4FFF;
+    foreground:     #CAD3F5FF;
+    selected:       #8AADF4FF;
+    active:         #A6DA95FF;
+    urgent:         #ED8796FF;
+}
