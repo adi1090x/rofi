@@ -3,12 +3,12 @@
  * Author : Aditya Shakya (adi1090x)
  * Github : @adi1090x
  * 
- * Configuration For Rofi Version: 1.7.3
+ * Configuration For Rofi Version: 1.7.4
  **/
 
 configuration {
 	/*---------- General setting ----------*/
-	modi: "drun,run,filebrowser,window";
+	modes: "drun,run,filebrowser,window";
 	case-sensitive: false;
 	cycle: true;
 	filter: "";
