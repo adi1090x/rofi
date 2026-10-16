@@ -85,13 +85,6 @@ chmod +x setup.sh
 - Run `setup.sh` to install the configs -
 ```
 ./setup.sh
-
-[*] Installing fonts...
-[*] Updating font cache...
-
-[*] Creating a backup of your rofi configs...
-[*] Installing rofi configs...
-[*] Successfully Installed.
 ```
 
 - That's it, These themes are now installed on your system.
